@@ -1,0 +1,65 @@
+.textBox {
+  width: 60%;
+  margin: 20vh auto;
+  border: 4px solid #d2d063;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  font-weight: 900;
+  color: #00bfb6;
+  background: white;
+  font-family: arial;
+  position: relative;
+}
+
+.left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: -35px;
+  bottom: 15px;
+}
+
+.left:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: -35px;
+  bottom: 15px;
+}
+
+.right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 42px solid #d2d063;
+    border-right: 37px solid transparent;
+    border-top: 41px solid transparent;
+    border-bottom: 42px solid transparent;
+    right: -5.2rem;
+    top: 5rem;
+}
+
+.right:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 41px solid #fff;
+  border-right: 22px solid transparent;
+  border-top: 40px solid transparent;
+  border-bottom: 44px solid transparent;
+  right: -4rem;
+  top: 5rem;
+}
