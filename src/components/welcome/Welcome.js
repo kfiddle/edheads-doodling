@@ -4,7 +4,10 @@ import styles from "./Welcome.module.css";
 const Welcome = (props) => {
   return (
     <div className={styles.welcomeDiv}>
-      <img src={robot} className={styles.robot}></img>
+        <div className={styles.greetingDiv}></div>
+      <div className={styles.robotDiv}>
+        <img src={robot} className={styles.robot}></img>
+      </div>
     </div>
   );
 };
