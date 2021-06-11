@@ -1,0 +1,9 @@
+.welcomeDiv {
+  width: 100%;
+  background: rgb(228, 179, 20);
+}
+
+.robot {
+  margin-top: 8vh;
+  width: 20%;
+}
