@@ -1,5 +1,5 @@
-
 .plane {
-    width: 30%;
-    margin-right: 10vw;
+  width: 30%;
+
+  transition: 4s cubic-bezier(0.8, 1, 0.8, 1);
 }
