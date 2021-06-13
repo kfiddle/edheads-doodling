@@ -1,0 +1,7 @@
+
+.launchingRobot {
+
+    /* transform: rotate(5deg); */
+    transform-origin: bottom;
+    transition: .4s ease;
+}
