@@ -1,7 +1,12 @@
+.robotDiv {
+  position: relative;
+  
+  /* transition: 2s cubic-bezier(0.2, 0.3, 0.4, .5); */
+  transition: 1s ease-in;
+
+}
 
 .launchingRobot {
-
-    /* transform: rotate(5deg); */
-    transform-origin: bottom;
-    transition: .4s ease;
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
 }

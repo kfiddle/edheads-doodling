@@ -4,6 +4,7 @@
   width: 100%;
   height: 80vh;
   background: rgb(211, 166, 19);
+  overflow: hidden;
 }
 
 .greetingDiv {
@@ -65,7 +66,6 @@ h3 {
   font-weight: 900;
   letter-spacing: 0;
 }
-
 
 .robotDiv {
   padding-top: 5vh;
