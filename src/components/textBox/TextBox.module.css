@@ -12,6 +12,7 @@
   position: relative;
 }
 
+
 .left:before {
   content: "";
   width: 0px;
