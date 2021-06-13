@@ -7,7 +7,15 @@ const Welcome = (props) => {
   return (
     <div className={styles.welcomeDiv}>
       <TextBox direction={"right"}>
-        Hello I'm a Lorem Ipsum thingie, even though I don't really know Latin.
+        <h3>Welcome to Edheads!</h3>
+        <p>
+          The hottest spot north of Havana (here) At the copa (co) Copacabana
+          Music and passion were always the fashion At the copa they fell in
+          love Copa, Copacabana His name was Rico He wore a diamond He was
+          escorted to his chair, he saw Lola dancing there And when she
+          finished,he called her over But Rico went a bit to far Tony sailed
+          across the bar And then the punches flew...
+        </p>
         <button className={styles.buttonToTheGames}>Explore Our Games!</button>
       </TextBox>
       <div className={styles.robotDiv}>

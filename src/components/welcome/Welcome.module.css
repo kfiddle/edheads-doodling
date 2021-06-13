@@ -14,6 +14,19 @@
   border-radius: 3rem; */
 }
 
+h3 {
+  color: #d2d063;
+  margin: 3% 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.welcomeDiv p {
+  margin:  0 10%;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+}
 
 .buttonToTheGames {
   position: absolute;
@@ -26,14 +39,12 @@
   width: 35%;
   height: 3.5rem;
 
-  opacity: .9;
+  opacity: 0.9;
 
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 2px;
-
 }
-
 
 .robotDiv {
   padding-top: 20vh;
