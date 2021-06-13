@@ -1,4 +1,5 @@
 import TextBox from "../textBox/TextBox";
+import ForwardArrow from '../forwardArrow/ForwardArrow';
 
 import robot from "../../assets/placeholderRobot.svg";
 import styles from "./Welcome.module.css";
@@ -18,6 +19,8 @@ const Welcome = (props) => {
         </p>
         <button className={styles.buttonToTheGames}>Explore Our Games!</button>
         <button className={styles.buttonToAboutUs}>Discover more about us!</button>
+        <ForwardArrow />
+
 
       </TextBox>
       <div className={styles.robotDiv}>

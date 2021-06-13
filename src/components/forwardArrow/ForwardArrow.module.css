@@ -1,0 +1,12 @@
+
+.forwardArrow {
+    position: absolute;
+
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+
+    bottom: 11%;
+    right: 4%;
+}

@@ -23,7 +23,7 @@ h3 {
 }
 
 .welcomeDiv p {
-  margin:  0 10%;
+  margin: 0 10%;
   font-size: 1.2rem;
   line-height: 1.2em;
 }
@@ -38,6 +38,7 @@ h3 {
   color: white;
   width: 35%;
   height: 3.5rem;
+  cursor: pointer;
 
   opacity: 0.9;
 
@@ -56,18 +57,19 @@ h3 {
   color: rgb(69, 69, 179);
   width: 35%;
   height: 3.5rem;
+  cursor: pointer;
 
   opacity: 0.9;
 
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: 0;
-
 }
 
+
 .robotDiv {
-  padding-top: 20vh;
-  margin-right: 15vw;
+  padding-top: 5vh;
+  margin-right: 7vw;
 }
 
 .robot {
