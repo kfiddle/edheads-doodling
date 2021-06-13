@@ -10,7 +10,7 @@ const Welcome = (props) => {
         <TextBox direction={"right"} />
       </div> */}
 
-      <TextBox direction={"right"}>Hello I'm a Lorem Ipsum thingie, even though I don't really know Latin.</TextBox>
+      <TextBox direction={"left"}>Hello I'm a Lorem Ipsum thingie, even though I don't really know Latin.</TextBox>
       <div className={styles.robotDiv}>
         <img src={robot} className={styles.robot}></img>
       </div>

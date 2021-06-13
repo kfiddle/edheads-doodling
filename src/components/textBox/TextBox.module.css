@@ -19,11 +19,11 @@
   height: 0px;
   position: absolute;
   border-left: 20px solid transparent;
-  border-right: 20px solid #fff;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  left: -35px;
-  bottom: 15px;
+  border-right: 48px solid #fff;
+  border-top: 41px solid transparent;
+  border-bottom: 39px solid transparent;
+  left: -4rem;
+  bottom: 5rem;
 }
 
 .left:after {
@@ -36,7 +36,7 @@
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   left: -35px;
-  bottom: 15px;
+  bottom: 5rem;
 }
 
 .right:before {
@@ -61,6 +61,6 @@
   border-right: 22px solid transparent;
   border-top: 40px solid transparent;
   border-bottom: 44px solid transparent;
-  right: -4rem;
+  right: -3.9rem;
   top: 5rem;
 }
