@@ -1,6 +1,7 @@
 .textBox {
-  width: 60%;
-  margin: 20vh auto;
+  position: relative;
+  width: 75%;
+  margin: 15vh auto;
   border: 4px solid #d2d063;
   border-radius: 20px;
   padding: 20px;
