@@ -17,6 +17,8 @@ const Welcome = (props) => {
           across the bar And then the punches flew...
         </p>
         <button className={styles.buttonToTheGames}>Explore Our Games!</button>
+        <button className={styles.buttonToAboutUs}>Discover more about us!</button>
+
       </TextBox>
       <div className={styles.robotDiv}>
         <img src={robot} className={styles.robot}></img>
