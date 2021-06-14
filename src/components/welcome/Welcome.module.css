@@ -1,14 +1,14 @@
 .welcomeDiv {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
-  /* background: rgb(211, 166, 19); */
-  
-  background: url('../../assets/laboratory.png');
+  margin: 0 .2rem;
+  background: url("../../assets/laboratory.png");
   background-repeat: no-repeat;
   background-size: cover;
-
+  /* background-position: 1rem 1rem; */
+  background-origin: content-box;
   overflow: hidden;
 }
 

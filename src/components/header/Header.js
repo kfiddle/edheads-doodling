@@ -12,8 +12,8 @@ const Header = (props) => {
     <div className={styles.header}>
       <div className={styles.cloudsDiv}>
         <img src={logo} className={styles.logo}></img>
-        {/* <Airplane /> */}
-        <WeatherHead />
+        <Airplane />
+        {/* <WeatherHead /> */}
         <TopNavBar />
       </div>
     </div>
