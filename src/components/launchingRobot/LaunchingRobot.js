@@ -19,6 +19,7 @@ const LaunchingRobot = (props) => {
             : `rotate(-${degrees}deg)`,
         }}
       ></img>
+
     </div>
   );
 };

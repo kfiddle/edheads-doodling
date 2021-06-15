@@ -5,7 +5,8 @@ import ForwardArrow from "../forwardArrow/ForwardArrow";
 import LaunchingRobot from "../launchingRobot/LaunchingRobot";
 import RocketCloud from "../rocketCloud/RocketCloud";
 
-import robot from "../../assets/placeholderRobot.svg";
+import rocketTrail from '../../assets/rocketTrail.png';
+
 import styles from "./Welcome.module.css";
 
 const Welcome = (props) => {
@@ -23,8 +24,11 @@ const Welcome = (props) => {
     size: 100,
   });
 
+  const [trailVisible, setTrailVisible] = useState(false)
+
   const shootUp = () => {
     setUpward(true);
+    setTrailVisible(true)
   };
 
   const launchRobot = () => {
@@ -79,6 +83,8 @@ const Welcome = (props) => {
         <LaunchingRobot
           position={{ position: rotate, degrees: degrees, trajectory: upward }}
         />
+
+        <img src={rocketTrail} className={trailVisible? styles.rocketTrail: styles.invisible} ></img>
       </div>
 
       {rocketClicked && <RocketCloud details={cloudDetails} />}

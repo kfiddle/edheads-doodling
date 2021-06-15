@@ -71,10 +71,21 @@ h3 {
 .robotDiv {
   padding-top: 5vh;
   margin-right: 7vw;
+
 }
 
 .robot {
   width: 85%;
   margin-top: 5vh;
   margin-right: 20vw;
+}
+
+.rocketTrail {
+  position:relative;
+  bottom: 35vh;
+  z-index: 0;
+}
+
+.invisible {
+  display: none;
 }
