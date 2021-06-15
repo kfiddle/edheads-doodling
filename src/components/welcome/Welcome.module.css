@@ -7,17 +7,13 @@
   background: url("../../assets/laboratory.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 1rem 1rem; */
   background-origin: content-box;
   overflow: hidden;
+  transition: 2s;
 }
 
 .greetingDiv {
-  /* width: 50vw;
-  margin: 8% 25% 8% 5%;
-  background: white;
-  border: 6px solid #d2d063;
-  border-radius: 3rem; */
+
 }
 
 h3 {

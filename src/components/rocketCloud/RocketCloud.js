@@ -9,7 +9,10 @@ import styles from './RocketCloud.module.css';
 
 const RocketCloud = (props) => {
 
-    return <div className={styles.rocketCloudDiv} style={{bottom: `${props.bottom}vh`, opacity: props.opacity}}></div>
+    const {opacity, bottom, left, size} = props.details;
+
+    return <div className={styles.rocketCloudDiv} 
+    style={{opacity: opacity, bottom: `${bottom}vh`,  left: `${left}vw`, backgroundSize: `${size}%`}}></div>
 
 };
 

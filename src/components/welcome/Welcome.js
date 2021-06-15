@@ -10,13 +10,18 @@ import styles from "./Welcome.module.css";
 
 const Welcome = (props) => {
   const [rotate, setRotate] = useState(true);
-  const [degrees, setDegrees] = useState(5);
+  const [degrees, setDegrees] = useState(0);
   const [upward, setUpward] = useState(false);
 
-  const [rocketClicked, setRocketClicked] = useState(false)
+  const [rocketClicked, setRocketClicked] = useState(false);
+  const [welcomeScreenOpacity, setWelcomeScreenOpacity] = useState(1)
 
-  const [cloudOpacity, setCloudOpacity] = useState(0);
-  const [cloudBottom, setCloudBottom] = useState(-115);
+  const [cloudDetails, setCloudDetails] = useState({
+    opacity: 0,
+    bottom: -115,
+    left: 20,
+    size: 100,
+  });
 
   const shootUp = () => {
     setUpward(true);
@@ -35,12 +40,15 @@ const Welcome = (props) => {
   };
 
   const cloudFloatUp = () => {
-    setCloudBottom(10);
-    setCloudOpacity(1);
+    setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
   };
 
+  const blackOut = () => {
+    setWelcomeScreenOpacity(0)
+  }
+
   return (
-    <div className={styles.welcomeDiv}>
+    <div className={styles.welcomeDiv} style={{opacity: welcomeScreenOpacity}}>
       <TextBox direction={"right"}>
         <h3>Welcome to Edheads!</h3>
         <p>
@@ -54,9 +62,10 @@ const Welcome = (props) => {
         <button
           className={styles.buttonToTheGames}
           onClick={() => {
-            setRocketClicked(true)
+            setRocketClicked(true);
             launchRobot(0);
             setTimeout(cloudFloatUp, 3000);
+            setTimeout(blackOut, 3500);
           }}
         >
           Explore Our Games!
@@ -71,7 +80,8 @@ const Welcome = (props) => {
           position={{ position: rotate, degrees: degrees, trajectory: upward }}
         />
       </div>
-      {rocketClicked && <RocketCloud bottom={cloudBottom} opacity={cloudOpacity} />}
+
+      {rocketClicked && <RocketCloud details={cloudDetails} />}
     </div>
   );
 };
