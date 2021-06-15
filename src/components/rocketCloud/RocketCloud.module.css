@@ -1,0 +1,13 @@
+
+
+.rocketCloudDiv {
+    position: absolute;
+    /* bottom: -95vh; */
+    background-image: url('../../assets/rocketClouds.png');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: -5% 30%;
+    width: 100vw;
+    height: 100vh;
+    transition: 2s;
+}

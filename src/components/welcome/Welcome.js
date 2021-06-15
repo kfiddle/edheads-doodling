@@ -3,6 +3,7 @@ import { useState } from "react";
 import TextBox from "../textBox/TextBox";
 import ForwardArrow from "../forwardArrow/ForwardArrow";
 import LaunchingRobot from "../launchingRobot/LaunchingRobot";
+import RocketCloud from "../rocketCloud/RocketCloud";
 
 import robot from "../../assets/placeholderRobot.svg";
 import styles from "./Welcome.module.css";
@@ -11,6 +12,11 @@ const Welcome = (props) => {
   const [rotate, setRotate] = useState(true);
   const [degrees, setDegrees] = useState(5);
   const [upward, setUpward] = useState(false);
+
+  const [rocketClicked, setRocketClicked] = useState(false)
+
+  const [cloudOpacity, setCloudOpacity] = useState(0);
+  const [cloudBottom, setCloudBottom] = useState(-115);
 
   const shootUp = () => {
     setUpward(true);
@@ -25,8 +31,12 @@ const Welcome = (props) => {
         i > 10 ? setDegrees(16 - i) : setDegrees(5);
       }, (400 - 10 * i) * i);
     }
-
     setTimeout(shootUp, 2500);
+  };
+
+  const cloudFloatUp = () => {
+    setCloudBottom(10);
+    setCloudOpacity(1);
   };
 
   return (
@@ -44,7 +54,9 @@ const Welcome = (props) => {
         <button
           className={styles.buttonToTheGames}
           onClick={() => {
+            setRocketClicked(true)
             launchRobot(0);
+            setTimeout(cloudFloatUp, 3000);
           }}
         >
           Explore Our Games!
@@ -55,25 +67,13 @@ const Welcome = (props) => {
         <ForwardArrow />
       </TextBox>
       <div className={styles.robotDiv}>
-        {/* <img src={robot} className={styles.robot}></img> */}
-        <LaunchingRobot position={rotate} degrees={degrees} trajectory={upward} />
+        <LaunchingRobot
+          position={{ position: rotate, degrees: degrees, trajectory: upward }}
+        />
       </div>
+      {rocketClicked && <RocketCloud bottom={cloudBottom} opacity={cloudOpacity} />}
     </div>
   );
 };
 
 export default Welcome;
-
-// const launchRobot = (i) => {
-//   let direction;
-//   i % 2 === 0 ? (direction = false) : (direction = true);
-//   setTimeout(() => {
-//     setRotate(direction);
-//     i > 10 ? setDegrees(16 - i) : setDegrees(5);
-//   }, (400-(10*i)) * i);
-//   i++;
-
-//   if (i < 16) {
-//     launchRobot(i);
-//   }
-// };
