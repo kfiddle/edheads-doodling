@@ -3,7 +3,12 @@ import styles from './NavBarButton.module.css';
 
 const NavBarButton = props => {
 
-    return <button className={styles.navButton}>{props.name}</button>
+    const clicked = () => {
+        props.clickedChoice(props.name);
+    }
+
+
+    return <button className={styles.navButton} onClick={clicked}>{props.name}</button>
 
 
 };

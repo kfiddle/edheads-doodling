@@ -1,0 +1,13 @@
+
+
+.aboutUsDiv {
+
+    position: absolute;
+    top:25vh;
+    z-index: 1;
+    width: 100vw;
+    height: 80vh;
+    background: darkorange;
+    transition: 3s cubic-bezier(0.3, 0.4, 0.5, 0.335);
+
+}
