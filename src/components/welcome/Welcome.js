@@ -54,14 +54,13 @@ const Welcome = (props) => {
   return (
     <div className={styles.welcomeDiv} style={{opacity: welcomeScreenOpacity}}>
       <TextBox direction={"right"}>
-        <h3>Welcome to Edheads!</h3>
+        <p className={styles.aboutUs}>ABOUT US</p>
+        <h3>Welcome to Edheads. Inspiring STEM careers through games!</h3>
         <p>
-          The hottest spot north of Havana (here) At the copa (co) Copacabana
-          Music and passion were always the fashion At the copa they fell in
-          love Copa, Copacabana His name was Rico He wore a diamond He was
-          escorted to his chair, he saw Lola dancing there And when she
-          finished,he called her over But Rico went a bit to far Tony sailed
-          across the bar And then the punches flew...
+          Our non-profit provides STEM games to empower k-12 students.
+        </p>
+        <p>Teachers use our games to bring life to their curriculum, so students 
+          can learn STEM lessons with real life and professional examples.
         </p>
         <button
           className={styles.buttonToTheGames}

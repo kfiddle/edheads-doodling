@@ -1,0 +1,25 @@
+.signUpDiv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0.2rem;
+  background: url("../../assets/engineering-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 35%;
+}
+
+.textBox {
+}
+
+.paulStemDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
+}
+
+.paulStem {
+    width: 250%;
+}

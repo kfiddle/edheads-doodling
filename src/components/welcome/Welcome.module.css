@@ -4,21 +4,24 @@
   width: 100vw;
   height: 80vh;
   margin: 0 .2rem;
+  border-bottom: solid darkslategray 1rem;
   background: url("../../assets/laboratory.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: 2s;
 }
 
-.greetingDiv {
-
+.aboutUs {
+  color: darkorange;
+  margin-bottom: 0;
 }
+
 
 h3 {
   color: #d2d063;
-  margin: 3% 10%;
+  margin: 0 10% 3% 10%;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -71,7 +74,6 @@ h3 {
 .robotDiv {
   padding-top: 5vh;
   margin-right: 7vw;
-
 }
 
 .robot {

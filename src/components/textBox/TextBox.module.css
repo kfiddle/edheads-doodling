@@ -23,7 +23,7 @@
   border-top: 41px solid transparent;
   border-bottom: 39px solid transparent;
   left: -4rem;
-  bottom: 5rem;
+  top: 5rem;
 }
 
 .left:after {
@@ -36,7 +36,7 @@
   border-top: 38px solid transparent;
   border-bottom: 40px solid transparent;
   left: -49px;
-  bottom: 5rem;
+  top: 5rem;
 }
 
 .right:before {
