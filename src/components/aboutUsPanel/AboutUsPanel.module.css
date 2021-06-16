@@ -7,8 +7,21 @@
     z-index: 1;
     width: 100vw;
     height: 80vh;
-    background: darkorange;
-    transition: 1.1s cubic-bezier(0.4, 0, 0.4, 1);
+    /* background: linear-gradient(to Right, orangeRed, rgb(197, 110, 3), orange, rgb(194, 148, 64) ); */
+    transition: transform 1.1s cubic-bezier(0.4, 0, 0.4, 1)
+
+}
+
+.openedDiv {
 
 
+        position: absolute;
+        top:25vh;
+        z-index: 1;
+        width: 100vw;
+        height: 80vh;
+        background: orange;
+        transition: 1.1s cubic-bezier(0.4, 0, 0.4, 1);
+    
+    
 }
