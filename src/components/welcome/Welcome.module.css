@@ -13,30 +13,41 @@
   transition: 2s;
 }
 
+/* .welcomeText{
+display: grid;
+grid-template-rows: auto;
+} */
+
 .aboutUs {
   color: darkorange;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 
-h3 {
+.welcomeTitle {
   color: #d2d063;
-  margin: 0 10% 3% 10%;
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0;
 }
 
-.welcomeDiv p {
-  margin: 0 10%;
+.basicText{
+  margin: 0;
   font-size: 1.2rem;
   line-height: 1.2em;
 }
 
+.buttonRow{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
 .buttonToTheGames {
-  position: absolute;
-  bottom: 11%;
-  left: 6%;
+  /* position: absolute; */
+  /* bottom: 11%;
+  left: 6%; */
   background: rgb(69, 69, 179);
   border-radius: 12px;
   border: none;
@@ -52,10 +63,14 @@ h3 {
   letter-spacing: 0;
 }
 
+.discoverUs{
+  display: flex;
+}
+
 .buttonToAboutUs {
-  position: absolute;
+  /* position: absolute;
   bottom: 11%;
-  right: 12%;
+  right: 12%; */
   background: transparent;
   border-radius: 12px;
   border: none;

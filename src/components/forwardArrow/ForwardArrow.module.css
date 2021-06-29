@@ -1,12 +1,12 @@
 
 .forwardArrow {
-    position: absolute;
-
+    /* position: absolute; */
+/* 
     color: white;
     width: 10rem;
-    height: 3rem;
+    height: 3rem; */
     cursor: pointer;
-
+/* 
     bottom: 11%;
-    right: 4%;
+    right: 4%; */
 }

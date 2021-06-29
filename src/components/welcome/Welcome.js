@@ -53,15 +53,19 @@ const Welcome = (props) => {
 
   return (
     <div className={styles.welcomeDiv} style={{opacity: welcomeScreenOpacity}}>
-      <TextBox direction={"right"}>
+      <TextBox direction={"right"} extraClass={"welcomeText"}>
         <p className={styles.aboutUs}>ABOUT US</p>
-        <h3>Welcome to Edheads. Inspiring STEM careers through games!</h3>
-        <p>
+        <h3 className={styles.welcomeTitle}>Welcome to Edheads. Inspiring STEM careers through games!</h3>
+        
+        <p className={styles.basicText}>
           Our non-profit provides STEM games to empower k-12 students.
         </p>
-        <p>Teachers use our games to bring life to their curriculum, so students 
+        <p className={styles.basicText}>
+          Teachers use our games to bring life to their curriculum, so students 
           can learn STEM lessons with real life and professional examples.
         </p>
+
+        <div className={styles.buttonRow}>
         <button
           className={styles.buttonToTheGames}
           onClick={() => {
@@ -73,10 +77,18 @@ const Welcome = (props) => {
         >
           Explore Our Games!
         </button>
+        
+        <div className={styles.discoverUs}>
+        
         <button className={styles.buttonToAboutUs}>
           Discover more about us!
-        </button>
-        <ForwardArrow />
+  </button>
+
+  <ForwardArrow />
+  </div>
+
+</div>
+
       </TextBox>
       <div className={styles.robotDiv}>
         <LaunchingRobot
