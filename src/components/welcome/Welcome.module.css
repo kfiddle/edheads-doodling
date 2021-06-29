@@ -26,7 +26,7 @@ grid-template-rows: auto;
 
 .welcomeTitle {
   color: #d2d063;
-  margin: 0;
+  margin: 0 0 .5rem 0;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -35,47 +35,50 @@ grid-template-rows: auto;
 .basicText{
   margin: 0;
   font-size: 1.2rem;
-  line-height: 1.2em;
+  line-height: 1.5em;
+  padding: .5rem 0rem;
 }
 
 .buttonRow{
   display: flex;
   justify-content: space-around;
+  margin-top: 1rem;;
 
 }
 
 .buttonToTheGames {
   background: rgb(69, 69, 179);
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
   color: white;
-  width: 35%;
-  height: 3.5rem;
+  /* width: 35%; */
+  /* height: 3.5rem; */
   cursor: pointer;
-  opacity: 0.9;
-  font-size: 120%;
+  /* opacity: 0.9; */
+  font-size: 110%;
   font-weight: 900;
   letter-spacing: 0;
+  white-space: nowrap;
+  padding: 1rem;
 }
 
 .discoverUs{
   display: flex;
-}
+  padding-left: 1rem;}
 
 .buttonToAboutUs {
   background: transparent;
   border-radius: 12px;
   border: none;
   color: rgb(69, 69, 179);
-  width: 66%;
+  /* width: 66%; */
   height: 3.5rem;
   cursor: pointer;
-
   opacity: 0.9;
-
-  font-size: 120%;
+  font-size: 110%;
   font-weight: 900;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .robotDiv {
