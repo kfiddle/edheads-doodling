@@ -40,14 +40,11 @@ grid-template-rows: auto;
 
 .buttonRow{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 
 .buttonToTheGames {
-  /* position: absolute; */
-  /* bottom: 11%;
-  left: 6%; */
   background: rgb(69, 69, 179);
   border-radius: 12px;
   border: none;
@@ -55,10 +52,8 @@ grid-template-rows: auto;
   width: 35%;
   height: 3.5rem;
   cursor: pointer;
-
   opacity: 0.9;
-
-  font-size: 1.5rem;
+  font-size: 120%;
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -68,20 +63,17 @@ grid-template-rows: auto;
 }
 
 .buttonToAboutUs {
-  /* position: absolute;
-  bottom: 11%;
-  right: 12%; */
   background: transparent;
   border-radius: 12px;
   border: none;
   color: rgb(69, 69, 179);
-  width: 35%;
+  width: 66%;
   height: 3.5rem;
   cursor: pointer;
 
   opacity: 0.9;
 
-  font-size: 1.5rem;
+  font-size: 120%;
   font-weight: 900;
   letter-spacing: 0;
 }
