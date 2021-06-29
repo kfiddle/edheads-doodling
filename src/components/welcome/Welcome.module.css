@@ -21,6 +21,7 @@ grid-template-rows: auto;
 .aboutUs {
   color: darkorange;
   margin: 0;
+  font-weight: 600;
 }
 
 
@@ -59,7 +60,7 @@ grid-template-rows: auto;
   font-weight: 900;
   letter-spacing: 0;
   white-space: nowrap;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .discoverUs{

@@ -6,10 +6,12 @@
   border-radius: 4rem;
   padding: 2rem;
   text-align: left;
-  font-weight: 700;
+  /* font-weight: 700; */
   background: white;
   /* font-family: arial; */
   /* position: relative; */
+  
+
 }
 
 .welcomeText{
