@@ -5,7 +5,7 @@ import ForwardArrow from "../forwardArrow/ForwardArrow";
 import LaunchingRobot from "../launchingRobot/LaunchingRobot";
 import RocketCloud from "../rocketCloud/RocketCloud";
 
-import rocketTrail from '../../assets/rocketTrail.png';
+import rocketTrail from "../../assets/rocketTrail.png";
 
 import styles from "./Welcome.module.css";
 
@@ -15,7 +15,7 @@ const Welcome = (props) => {
   const [upward, setUpward] = useState(false);
 
   const [rocketClicked, setRocketClicked] = useState(false);
-  const [welcomeScreenOpacity, setWelcomeScreenOpacity] = useState(1)
+  const [welcomeScreenOpacity, setWelcomeScreenOpacity] = useState(1);
 
   const [cloudDetails, setCloudDetails] = useState({
     opacity: 0,
@@ -24,11 +24,11 @@ const Welcome = (props) => {
     size: 100,
   });
 
-  const [trailVisible, setTrailVisible] = useState(false)
+  const [trailVisible, setTrailVisible] = useState(false);
 
   const shootUp = () => {
     setUpward(true);
-    setTrailVisible(true)
+    setTrailVisible(true);
   };
 
   const launchRobot = () => {
@@ -48,54 +48,59 @@ const Welcome = (props) => {
   };
 
   const blackOut = () => {
-    setWelcomeScreenOpacity(0)
-  }
+    setWelcomeScreenOpacity(0);
+  };
 
   return (
-    <div className={styles.welcomeDiv} style={{opacity: welcomeScreenOpacity}}>
+    <div
+      className={styles.welcomeDiv}
+      style={{ opacity: welcomeScreenOpacity }}
+    >
       <TextBox direction={"right"} extraClass={"welcomeText"}>
         <p className={styles.aboutUs}>ABOUT US</p>
-        <h3 className={styles.welcomeTitle}>Welcome to Edheads. Inspiring STEM careers through games!</h3>
-        
+        <h3 className={styles.welcomeTitle}>
+          Welcome to Edheads. Inspiring STEM careers through games!
+        </h3>
+
         <p className={styles.basicText}>
           Our non-profit provides STEM games to empower k-12 students.
         </p>
         <p className={styles.basicText}>
-          Teachers use our games to bring life to their curriculum, so students 
+          Teachers use our games to bring life to their curriculum, so students
           can learn STEM lessons with real life and professional examples.
         </p>
 
         <div className={styles.buttonRow}>
-        <button
-          className={styles.buttonToTheGames}
-          onClick={() => {
-            setRocketClicked(true);
-            launchRobot(0);
-            setTimeout(cloudFloatUp, 3000);
-            setTimeout(blackOut, 3500);
-          }}
-        >
-          Explore Our Games!
-        </button>
-        
-        <div className={styles.discoverUs}>
-        
-        <button className={styles.buttonToAboutUs}>
-          Discover more about us!
-  </button>
+          <button
+            className={styles.buttonToTheGames}
+            onClick={() => {
+              setRocketClicked(true);
+              launchRobot(0);
+              setTimeout(cloudFloatUp, 3000);
+              setTimeout(blackOut, 3500);
+            }}
+          >
+            Explore Our Games!
+          </button>
 
-  <ForwardArrow />
-  </div>
+          <div className={styles.discoverUs}>
+            <button className={styles.buttonToAboutUs}>
+              Discover more about us!
+            </button>
 
-</div>
-
+            <ForwardArrow />
+          </div>
+        </div>
       </TextBox>
       <div className={styles.robotDiv}>
         <LaunchingRobot
           position={{ position: rotate, degrees: degrees, trajectory: upward }}
         />
 
-        <img src={rocketTrail} className={trailVisible? styles.rocketTrail: styles.invisible} ></img>
+        <img
+          src={rocketTrail}
+          className={trailVisible ? styles.rocketTrail : styles.invisible}
+        ></img>
       </div>
 
       {rocketClicked && <RocketCloud details={cloudDetails} />}

@@ -1,70 +1,64 @@
 .textBox {
-  position: relative;
-  width: 75%;
-  margin: 15vh auto;
+  background: white;
   border: 4px solid #d2d063;
   border-radius: 4rem;
+  margin: 15vh auto;
   padding: 2rem;
+  position: relative;
   text-align: left;
-  font-weight: 700;
-  background: white;
-  /* font-family: arial; */
-  /* position: relative; */
+  width: 75%;
 }
 
-.welcomeText{
+.welcomeText {
   display: grid;
   grid-template-rows: auto;
-  }
-
-.left:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 0px solid transparent;
-  border-right: 65px solid #d2d063;
-  border-top: 41px solid transparent;
-  border-bottom: 39px solid transparent;
-  left: -4rem;
-  top: 5rem;
 }
 
-.left:after {
+.left:before {
+  border-bottom: 64px solid transparent;
+  border-left: -59px solid transparent;
+  border-right: 83px solid #d2d063;
+  border-top: 54px solid transparent;
   content: "";
-  width: 0px;
-  height: 0px;
+  height: 3px;
   position: absolute;
-  border-left: -37px solid transparent;
-  border-right: 54px solid #fff;
-  border-top: 38px solid transparent;
-  border-bottom: 40px solid transparent;
-  left: -49px;
+  left: -5.4rem;
   top: 5rem;
 }
 
 .right:before {
+  border-bottom: 64px solid transparent;
+  border-left: 83px solid #d2d063;
+  border-right: 5px solid transparent;
+  border-top: 54px solid transparent;
   content: "";
-  width: 0px;
-  height: 0px;
   position: absolute;
-  border-left: 80px solid #d2d063;
-  border-right: 80px solid transparent;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  right: -10.2rem;
-  top: 5rem;
+  right: -5.5rem;
+  top: 5.25rem;
+  height: 3px;
+}
+
+.left:after {
+  border-bottom: 59px solid transparent;
+  border-left: -37px solid transparent;
+  border-right: 79px solid #fff;
+  border-top: 52px solid transparent;
+  content: "";
+  left: -79px;
+  top: 5.35rem;
+  position: absolute;
+  width: 0px;
 }
 
 .right:after {
+  border-bottom: 59px solid transparent;
+  border-left: 77px solid #fff;
+  border-right: -3px solid transparent;
+  border-top: 52px solid transparent;
   content: "";
-  width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 83px solid #fff;
-  border-right: 5px solid transparent;
-  border-top: 54px solid transparent;
-  border-bottom: 64px solid transparent;
   right: -4.8rem;
-  top: 5.25rem;
+  top: 5.55rem;
+  width: 0px;
 }
