@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Header clickedChoice={chosenPanelHandler} />
       <Welcome />
-      {choice === 'About Us' && <AboutUs />}
+       {choice === 'About Us' && <AboutUs />}
       <div
         style={{
           width: "100vw",
@@ -50,7 +50,7 @@ function App() {
         </h2>
       </div>
       <DonatePanel />
-      <Footer />
+     <Footer /> 
     </div>
   );
 }
