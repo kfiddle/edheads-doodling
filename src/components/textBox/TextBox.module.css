@@ -41,12 +41,11 @@
 .left:after {
   border-bottom: 59px solid transparent;
   border-left: -37px solid transparent;
-  border-right: 77px solid #fff;
+  border-right: 79px solid #fff;
   border-top: 52px solid transparent;
   content: "";
-
-  left: -77px;
-  top: 5.3rem;
+  left: -79px;
+  top: 5.35rem;
   position: absolute;
   width: 0px;
 }
