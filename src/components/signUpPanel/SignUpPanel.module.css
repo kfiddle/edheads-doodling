@@ -4,7 +4,8 @@
   width: 100vw;
   height: 100vh;
   /* margin: 0 0.2rem; */
-  border: solid darkslategray 1rem;
+  border-top: solid darkslategray 1rem;
+  border-bottom: solid darkslategray 1rem;
 
   background: url("../../assets/engineering-2.png");
   background-size: cover;
@@ -12,19 +13,18 @@
   background-position: 0 35%;
 }
 
-.textBox {
-}
+
 
 .paulStemDiv {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  margin-left: 0;
+  align-items: center; 
+  margin-left: 0; 
 }
 
-.paulStem {
+/* .paulStem {
   width: 250%;
-}
+} */
 /* 
 h3 {
   color: #d2d063;
