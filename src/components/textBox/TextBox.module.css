@@ -15,29 +15,32 @@
   }
 
 .left:before {
-  border-bottom: 40px solid transparent;
-  border-left: -37px solid transparent;
-  border-right: 54px solid #d2d063;
-  border-top: 38px solid transparent;
+  border-bottom: 66px solid transparent;
+  border-left: -59px solid transparent;
+  border-right: 90px solid #d2d063;
+  border-top: 44px solid transparent;
   content: "";
-  height: 0px;
+  height: 3px;
   position: absolute;
-  left: -3.6rem;
+  left: -5.6rem;
   top: 5rem;
-  width: 0px;
+  width: -5px;
 }
 
+
 .left:after {
-  border-bottom: 40px solid transparent;
+  border-bottom: 59px solid transparent;
   border-left: -37px solid transparent;
-  border-right: 54px solid #fff;
-  border-top: 38px solid transparent;
+  border-right: 85px solid #fff;
+  border-top: 34px solid transparent;
   content: "";
-  height: 0px;
-  left: -49px;
-  top: 5rem;
+  height: 4px;
+  left: -81px;
+  top: 5.6rem;
   position: absolute;
   width: 0px;
+
+
 }
 
 .right:before {
