@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   margin: 0 .2rem;
   border-bottom: solid darkslategray 1rem;
-  background: url("../../assets/laboratory.png");
+  background: url("../../assets/laboratoryNew.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
