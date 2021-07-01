@@ -25,6 +25,7 @@ const Welcome = (props) => {
   });
 
   const [trailVisible, setTrailVisible] = useState(false);
+  const [textBoxOpacity, setTextBoxOpacity] = useState(1);
 
   const shootUp = () => {
     setUpward(true);
@@ -43,13 +44,18 @@ const Welcome = (props) => {
     setTimeout(shootUp, 2500);
   };
 
-
   const rocketSequence = () => {
     props.gamesClicked("Our Games");
     setRocketClicked(true);
     launchRobot(0);
-    setTimeout(() => { setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 })}, 3000)
-    setTimeout(() => { setWelcomeScreenOpacity(0) }, 3500)
+    // setTextBoxOpacity(0);
+
+    setTimeout(() => {
+      setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
+    }, 3000);
+    setTimeout(() => {
+      setWelcomeScreenOpacity(0);
+    }, 3500);
   };
 
   return (
@@ -57,52 +63,59 @@ const Welcome = (props) => {
       className={styles.welcomeDiv}
       style={{ opacity: welcomeScreenOpacity }}
     >
-
       <div className={styles.welcomeContainer}>
-      <TextBox direction={"right"} extraClass={"welcomeText"}>
-        <p className={styles.aboutUs}>ABOUT US</p>
-        <h3 className={styles.welcomeTitle}>
-          Welcome to Edheads. Inspiring STEM careers through games!
-        </h3>
+        <TextBox direction={"right"} extraClass={"welcomeText"} opacity ={textBoxOpacity}>
+          <p className={styles.aboutUs}>ABOUT US</p>
+          <h3 className={styles.welcomeTitle}>
+            Welcome to Edheads. Inspiring STEM careers through games!
+          </h3>
 
-        <p className={styles.basicText}>
-          Our non-profit provides STEM games to empower k-12 students.
-        </p>
-        <p className={styles.basicText}>
-          Teachers use our games to bring life to their curriculum, so students
-          can learn STEM lessons with real life and professional examples.
-        </p>
+          <p className={styles.basicText}>
+            Our non-profit provides STEM games to empower k-12 students.
+          </p>
+          <p className={styles.basicText}>
+            Teachers use our games to bring life to their curriculum, so
+            students can learn STEM lessons with real life and professional
+            examples.
+          </p>
 
-        <div className={styles.buttonRow}>
-          <button className={styles.buttonToTheGames} onClick={rocketSequence}>
-            Explore Our Games!
-          </button>
-
-          <div className={styles.discoverUs}>
-            <button className={styles.buttonToAboutUs}>
-              Discover more about us!
+          <div className={styles.buttonRow}>
+            <button
+              className={styles.buttonToTheGames}
+              onClick={rocketSequence}
+            >
+              Explore Our Games!
             </button>
 
-            <ForwardArrow />
+            <div className={styles.discoverUs}>
+              <button className={styles.buttonToAboutUs}>
+                Discover more about us!
+              </button>
+
+              <ForwardArrow />
+            </div>
           </div>
+        </TextBox>
+
+        <div className={styles.robotDiv}>
+          <LaunchingRobot
+            position={{
+              position: rotate,
+              degrees: degrees,
+              trajectory: upward,
+            }}
+          />
+
+          <img
+            src={rocketTrail}
+            className={trailVisible ? styles.rocketTrail : styles.invisible}
+            
+          ></img>
         </div>
-      </TextBox>
 
-      <div className={styles.robotDiv}>
-        <LaunchingRobot
-          position={{ position: rotate, degrees: degrees, trajectory: upward }}
-        />
-
-        <img
-          src={rocketTrail}
-          className={trailVisible ? styles.rocketTrail : styles.invisible}
-        ></img>
+        {rocketClicked && <RocketCloud details={cloudDetails} />}
       </div>
-
-      {rocketClicked && <RocketCloud details={cloudDetails} />}
     </div>
-    </div>
-
   );
 };
 
