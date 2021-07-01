@@ -16,5 +16,5 @@
     top:25vh;
     transition: 1.1s cubic-bezier(0.4, 0, 0.4, 1);
     width: 100vw;
-    z-index: 1;
+    z-index: 1;  
 }
