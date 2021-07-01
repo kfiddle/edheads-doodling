@@ -8,7 +8,7 @@ const LaunchingRobot = (props) => {
   return (
     <div
       className={styles.robotDiv}
-      style={{ transform: trajectory && "translateY(-110%)" }}
+      style={{ transform: trajectory && "translateY(-150%)" }}
     >
       <img
         src={robot}

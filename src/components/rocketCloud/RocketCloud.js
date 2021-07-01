@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 
 import styles from './RocketCloud.module.css';
-// import cloud from '../../../assets/edheadsClouds.svg';
 
 
 const RocketCloud = (props) => {

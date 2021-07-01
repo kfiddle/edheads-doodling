@@ -11,17 +11,27 @@ import Footer from "./components/footer/Footer";
 import "./App.css";
 
 function App() {
-  const [choice, setChoice] = useState("");
+  const [choice, setChoice] = useState("Welcome");
+
+  const welcome = choice === "Welcome";
+  const aboutUs = choice === "About Us";
+  const ourGames = choice === "Our Games";
 
   const chosenPanelHandler = (choice) => {
-    choice === 'About Us' && setChoice('About Us');
+    if (choice === "Our Games") {
+      setTimeout(() => {
+        setChoice(choice);
+      }, 5000);
+    } else {
+      setChoice(choice);
+    }
   };
 
   return (
     <div className="App">
       <Header clickedChoice={chosenPanelHandler} />
-      <Welcome />
-       {choice === 'About Us' && <AboutUs />}
+      {welcome && <Welcome gamesClicked={chosenPanelHandler} />}
+      {aboutUs && <AboutUs />}
       <div
         style={{
           width: "100vw",
@@ -50,7 +60,7 @@ function App() {
         </h2>
       </div>
       <DonatePanel />
-     <Footer /> 
+      <Footer />
     </div>
   );
 }

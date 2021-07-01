@@ -43,12 +43,13 @@ const Welcome = (props) => {
     setTimeout(shootUp, 2500);
   };
 
-  const cloudFloatUp = () => {
-    setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
-  };
 
-  const blackOut = () => {
-    setWelcomeScreenOpacity(0);
+  const rocketSequence = () => {
+    props.gamesClicked("Our Games");
+    setRocketClicked(true);
+    launchRobot(0);
+    setTimeout(() => { setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 })}, 3000)
+    setTimeout(() => { setWelcomeScreenOpacity(0) }, 3500)
   };
 
   return (
@@ -71,15 +72,7 @@ const Welcome = (props) => {
         </p>
 
         <div className={styles.buttonRow}>
-          <button
-            className={styles.buttonToTheGames}
-            onClick={() => {
-              setRocketClicked(true);
-              launchRobot(0);
-              setTimeout(cloudFloatUp, 3000);
-              setTimeout(blackOut, 3500);
-            }}
-          >
+          <button className={styles.buttonToTheGames} onClick={rocketSequence}>
             Explore Our Games!
           </button>
 
