@@ -57,6 +57,8 @@ const Welcome = (props) => {
       className={styles.welcomeDiv}
       style={{ opacity: welcomeScreenOpacity }}
     >
+
+      <div className={styles.welcomeContainer}>
       <TextBox direction={"right"} extraClass={"welcomeText"}>
         <p className={styles.aboutUs}>ABOUT US</p>
         <h3 className={styles.welcomeTitle}>
@@ -85,6 +87,7 @@ const Welcome = (props) => {
           </div>
         </div>
       </TextBox>
+
       <div className={styles.robotDiv}>
         <LaunchingRobot
           position={{ position: rotate, degrees: degrees, trajectory: upward }}
@@ -98,6 +101,8 @@ const Welcome = (props) => {
 
       {rocketClicked && <RocketCloud details={cloudDetails} />}
     </div>
+    </div>
+
   );
 };
 
