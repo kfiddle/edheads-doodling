@@ -1,6 +1,6 @@
 .welcomeDiv {
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
   width: 100vw;
   height: 100vh;
@@ -16,8 +16,10 @@
 }
 
 .welcomeContainer{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
+
+  display: flex;
   
 }
 

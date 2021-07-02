@@ -7,13 +7,13 @@
   position: relative;
   text-align: left;
   width: 70%;
-  height: 40%;
+  /* height: 40%; */
   transition: 1s;
 }
 
 .welcomeText {
-  display: grid;
-  grid-template-rows: auto;
+  /* display: grid;
+  grid-template-rows: auto; */
 }
 
 .left:before {
