@@ -1,32 +1,16 @@
 .welcomeDiv {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-
   width: 100vw;
-  /* height: 100vh; */
-  margin: 0 .2rem;
   margin-top: 20vh;
   border-bottom: solid darkslategray 1rem;
   background: url("../../assets/laboratoryNew.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-origin: content-box;
-  /* overflow: hidden; */
-  transition: 2s;
 }
 
 .welcomeContainer{
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; */
-
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-
-/* .welcomeText{
-display: grid;
-grid-template-rows: auto;
-} */
 
 .aboutUs {
   color: darkorange;
@@ -103,7 +87,7 @@ grid-template-rows: auto;
   margin-right: 20vw;
 }
 
-.rocketTrail {
+/* .rocketTrail {
   position:relative;
   bottom: 35vh;
   opacity: 1;
@@ -112,4 +96,4 @@ grid-template-rows: auto;
 
 .invisible {
   opacity: 0;
-}
+} */
