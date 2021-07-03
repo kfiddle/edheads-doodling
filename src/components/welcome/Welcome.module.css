@@ -1,6 +1,6 @@
 .welcomeDiv {
   width: 100vw;
-  margin-top: 20vh;
+  height:100vh;
   border-bottom: solid darkslategray 1rem;
   background: url("../../assets/laboratoryNew.png");
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 .welcomeContainer{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin: 25vh auto;
 }
 
 .aboutUs {

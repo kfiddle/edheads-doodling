@@ -1,6 +1,5 @@
 .donatePanelDiv {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  
   width: 100vw;
   height: 100vh;
   border-top: solid darkslategray 1rem;
@@ -9,47 +8,86 @@
   background: url("../../assets/engineering.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 35%;
+  /* background-position: 0 35%; */
 }
 
-.textBox {
+.donateContainer{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
 }
 
 .izzyDiv {
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 0;
+  margin-left: 0; */
 }
 
 .izzy {
-  width: 250%;
+  /* width: 250%; */
+}
+
+.aboutUs {
+  color: darkorange;
+  margin: 0;
+  font-weight: 600;
 }
 
 
-
-.donateButton {
-  position: absolute;
-  bottom: 11%;
-  left: 6%;
-  background: rgb(69, 69, 179);
-  border-radius: 12px;
-  border: none;
-  color: white;
-  height: 3.5rem;
-  cursor: pointer;
-  opacity: 0.9;
-
-  font-size: 1.5rem;
-  font-weight: 900;
+.welcomeTitle {
+  color: #d2d063;
+  margin: 0 0 .5rem 0;
+  font-size: 2.5rem;
+  font-weight: 800;
   letter-spacing: 0;
 }
 
-.getInvolved {
-  color: darkorange;
+.basicText{
   margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  padding: .5rem 0rem;
 }
 
-.buttonText {
-  padding: 0 1rem;
+.buttonRow{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;;
+
+}
+
+.buttonToTheGames {
+  background: rgb(69, 69, 179);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  /* width: 35%; */
+  /* height: 3.5rem; */
+  cursor: pointer;
+  /* opacity: 0.9; */
+  font-size: 110%;
+  font-weight: 900;
+  letter-spacing: 0;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+}
+
+.discoverUs{
+  display: flex;
+  padding-left: 1rem;}
+
+.buttonToAboutUs {
+  background: transparent;
+  border-radius: 12px;
+  border: none;
+  color: rgb(69, 69, 179);
+  /* width: 66%; */
+  height: 3.5rem;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 110%;
+  font-weight: 900;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
