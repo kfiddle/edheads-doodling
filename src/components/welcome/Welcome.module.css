@@ -3,8 +3,8 @@
   grid-template-columns: 2fr 1fr;
 
   width: 100vw;
-  height: 100vh;
-  /* margin: 0 .2rem; */
+  /* height: 100vh; */
+  margin: 0 .2rem;
   margin-top: 20vh;
   border-bottom: solid darkslategray 1rem;
   background: url("../../assets/laboratoryNew.png");

@@ -106,11 +106,10 @@ const Welcome = (props) => {
             }}
           />
 
-          <img
+          {/* <img
             src={rocketTrail}
             className={trailVisible ? styles.rocketTrail : styles.invisible}
-            
-          ></img>
+          ></img> */}
         </div>
 
         {rocketClicked && <RocketCloud details={cloudDetails} />}
