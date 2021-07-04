@@ -1,9 +1,13 @@
 import styles from "./GameScene.module.css";
 
 const GameScene = props => {
+
+  const {scene, gameTitle, description} = props.gameObject;
+
   return <div className={styles.gameSceneContainer}>
-    <img src={props.scene} className={styles.sceneImage}></img>
-    <h2>{props.gameTitle}</h2>
+    <img src={scene} className={styles.sceneImage}></img>
+    <h2 className={styles.gameTitle}>{gameTitle}</h2>
+    <p>{description}</p>
   </div>;
 };
 

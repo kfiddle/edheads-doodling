@@ -1,8 +1,15 @@
-.gamesPanelContainer {
+.outermostContainer {
+
+
+}
+
+.innerContainer {
   position: relative;
   top: 25vh;
+  margin-left: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  width: 80vw;
+  grid-gap: 1rem;
+  width: 60%;
+
 }
