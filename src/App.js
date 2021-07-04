@@ -4,8 +4,8 @@ import Header from "./components/header/Header";
 import Welcome from "./components/welcome/Welcome";
 import SignUpPanel from "./components/signUpPanel/SignUpPanel";
 import DonatePanel from "./components/donatePanel/DonatePanel";
-
 import AboutUs from "./components/aboutUsPanel/AboutUsPanel";
+import GamesPanel from "./components/games/GamesPanel";
 import Footer from "./components/footer/Footer";
 
 import "./App.css";
@@ -16,6 +16,7 @@ function App() {
   const welcome = choice === "Welcome";
   const aboutUs = choice === "About Us";
   const ourGames = choice === "Our Games";
+  const gamesPanel = choice === 'Games Panel';
 
   const chosenPanelHandler = (choice) => {
     if (choice === "Our Games") {
@@ -32,6 +33,7 @@ function App() {
       <Header clickedChoice={chosenPanelHandler} />
       {welcome && <Welcome gamesClicked={chosenPanelHandler} />}
       {aboutUs && <AboutUs />}
+      {gamesPanel && <GamesPanel />}
       <div
         style={{
           width: "100vw",
