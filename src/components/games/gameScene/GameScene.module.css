@@ -1,0 +1,13 @@
+.gameSceneContainer {
+  /* width: 25%; */
+    padding: 2rem;
+
+
+}
+
+.sceneImage {
+  width: 80%;
+  border-radius: 10px;
+  border: solid 4px rgb(211, 166, 19);
+
+}

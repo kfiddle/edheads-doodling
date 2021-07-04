@@ -33,7 +33,7 @@ function App() {
       <Header clickedChoice={chosenPanelHandler} />
       {welcome && <Welcome gamesClicked={chosenPanelHandler} />}
       {aboutUs && <AboutUs />}
-      {gamesPanel && <GamesPanel />}
+      {ourGames && <GamesPanel />}
       <div
         style={{
           width: "100vw",

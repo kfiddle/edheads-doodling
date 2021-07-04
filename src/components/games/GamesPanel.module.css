@@ -1,0 +1,8 @@
+.gamesPanelContainer {
+  position: relative;
+  top: 25vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 80vw;
+}
