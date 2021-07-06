@@ -53,7 +53,6 @@ const GamesPanel = (props) => {
   return (
     <div className={styles.outermostContainer} style={{ opacity: emerging }}>
       <div className={styles.innerContainer}>{allScenes}</div>
-      <SideBar />
     </div>
   );
 };

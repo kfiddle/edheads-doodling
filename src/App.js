@@ -6,6 +6,7 @@ import SignUpPanel from "./components/signUpPanel/SignUpPanel";
 import DonatePanel from "./components/donatePanel/DonatePanel";
 import AboutUs from "./components/aboutUsPanel/AboutUsPanel";
 import GamesPanel from "./components/games/GamesPanel";
+import SideBar from "./components/sideBar/SideBar";
 import Footer from "./components/footer/Footer";
 
 import "./App.css";
@@ -16,12 +17,15 @@ function App() {
   const welcome = choice === "Welcome";
   const aboutUs = choice === "About Us";
   const ourGames = choice === "Our Games";
-  const gamesPanel = choice === 'Games Panel';
+  const exploreGames = choice === 'Explore Games';
+  const gamesPanel = choice === "Games Panel";
+
+  const sideBarOpen = aboutUs || ourGames;
 
   const chosenPanelHandler = (choice) => {
-    if (choice === "Our Games") {
+    if (choice === "Explore Games") {
       setTimeout(() => {
-        setChoice(choice);
+        setChoice("Our Games");
       }, 5000);
     } else {
       setChoice(choice);
@@ -34,11 +38,13 @@ function App() {
       {welcome && <Welcome gamesClicked={chosenPanelHandler} />}
       {aboutUs && <AboutUs />}
       {ourGames && <GamesPanel />}
+      {sideBarOpen && <SideBar />}
+
       <div
         style={{
           width: "100vw",
           height: "25vh",
-          background: "wheat",
+          background: 'wheat',
           display: "flex",
           justifyContent: "center",
         }}

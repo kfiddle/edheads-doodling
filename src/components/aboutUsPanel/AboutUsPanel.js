@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import TextBox from "../textBox/TextBox";
 import SecondaryNavBar from "../secondaryNavBar/SecondaryNavBar";
+import SideBar from "../sideBar/SideBar";
 import styles from "./AboutUsPanel.module.css";
 
 const AboutUsPanel = (props) => {
@@ -27,8 +28,9 @@ const AboutUsPanel = (props) => {
       className={styles.aboutUsDiv}
       style={{ transform: `translateX(${slidePosition}vw)`, background: color }}
     >
-      <SecondaryNavBar />
-      <TextBox className={styles.textBox}>
+       <SecondaryNavBar />
+
+      <TextBox>
         <h3 className={styles.textBoxHeading}>What is Edheads?</h3>
         <p className={styles.basicText}>
           Edheads is an online educational resource that provides science and
@@ -57,7 +59,7 @@ const AboutUsPanel = (props) => {
           </p>{" "}
           to dive into an activity and let the fun begin!
         </p>
-      </TextBox>
+      </TextBox> 
     </div>
   );
 };
