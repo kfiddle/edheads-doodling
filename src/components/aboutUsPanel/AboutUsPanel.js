@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import TextBox from "../textBox/TextBox";
+import SecondaryNavBar from "../secondaryNavBar/SecondaryNavBar";
 import styles from "./AboutUsPanel.module.css";
 
 const AboutUsPanel = (props) => {
@@ -29,6 +30,7 @@ const AboutUsPanel = (props) => {
       className={styles.aboutUsDiv}
       style={{ transform: `translateX(${slidePosition}vw)`, background:color }}
     >
+      <SecondaryNavBar />
       <TextBox className={styles.textBox}>
         <h1>Don't worry, this will have actual content soon.</h1>
         <p>Plus, it won't be so orange.</p>
