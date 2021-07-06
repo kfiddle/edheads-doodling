@@ -18,3 +18,9 @@
     width: 100vw;
     z-index: 1;  
 }
+
+.gamesLink {
+    display: inline-block;
+    color: #4a86c2;
+    cursor: pointer;
+}
