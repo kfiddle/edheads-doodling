@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
+
 import GameScene from "./gameScene/GameScene";
+import SideBar from "../sideBar/SideBar";
 
 import scene1 from "../../assets/gameScenes/simp mach bedroom.jpg";
 import scene2 from "../../assets/gameScenes/simp mach tool shed.jpg";
@@ -35,15 +38,22 @@ const gamesObjects = [
 ];
 
 const GamesPanel = (props) => {
+  const [emerging, setEmerging] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setEmerging(1);
+    }, 10);
+  }, []);
+
   const allScenes = gamesObjects.map((scene) => (
     <GameScene gameObject={scene} key={Math.random()} />
   ));
 
   return (
-    <div className={styles.outermostContainer}>
-      <div className={styles.innerContainer}>
-        {allScenes}
-      </div>
+    <div className={styles.outermostContainer} style={{ opacity: emerging }}>
+      <div className={styles.innerContainer}>{allScenes}</div>
+      <SideBar />
     </div>
   );
 };
