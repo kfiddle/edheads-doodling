@@ -88,12 +88,14 @@ const Welcome = (props) => {
             </button>
 
             <div className={styles.discoverUs}>
+
               <button className={styles.buttonToAboutUs}>
                 Discover more about us!
               </button>
 
               <ForwardArrow />
             </div>
+            
           </div>
         </TextBox>
 
