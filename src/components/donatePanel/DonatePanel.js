@@ -28,7 +28,13 @@ const DonatePanel = () => {
               Sign Up
             </button>
 
+
+     
+
+
+
             <div className={styles.discoverUs}>
+
 
               <button className={styles.buttonToAboutUs}>
                 Lorem Ipsum!
@@ -48,3 +54,4 @@ const DonatePanel = () => {
 };
 
 export default DonatePanel;
+

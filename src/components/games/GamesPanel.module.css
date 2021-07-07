@@ -1,0 +1,13 @@
+.outermostContainer {
+  position: relative;
+  margin-top: 25vh;
+  transition: 4s;
+}
+
+.innerContainer {
+ 
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+}

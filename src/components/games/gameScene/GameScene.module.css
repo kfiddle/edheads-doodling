@@ -1,0 +1,26 @@
+.gameSceneContainer {
+  /* width: 25%; */
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.sceneImage {
+  width: 80%;
+  border-radius: 2.5rem;
+  border: solid 4px rgb(211, 166, 19);
+}
+
+.gameTitle {
+  /* color: rgb(218, 141, 47); */
+  color: #d1a10e;
+  font-weight: 800;
+  margin: 0.5rem 0 0 0;
+}
+
+.learnMoreLink {
+  display: inline-block;
+  color: aquamarine;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}

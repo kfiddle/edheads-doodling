@@ -45,7 +45,7 @@ const Welcome = (props) => {
   };
 
   const rocketSequence = () => {
-    props.gamesClicked("Our Games");
+    props.gamesClicked("Explore Games");
     setRocketClicked(true);
     launchRobot(0);
     // setTextBoxOpacity(0);
