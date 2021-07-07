@@ -9,9 +9,10 @@
     height: 100%;
     background: #d2d063;
     padding: 2rem;
-    transform: translateX(-30vw);
+    /* transform: translateX(70vw); */
     transition: 1.2s cubic-bezier(0.4, 0, 0.4, 1);
     width: 23vw;
+    z-index: 1;
   }
   
   .menuContainer {

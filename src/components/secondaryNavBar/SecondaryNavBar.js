@@ -10,7 +10,7 @@ const SecondaryNavBar = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setPlacement(0);
-    }, 10 );
+    }, 700 );
   }, []);
 
   return (

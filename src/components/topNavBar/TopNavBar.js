@@ -16,7 +16,7 @@ const TopNavBar = (props) => {
       <NavBarButton name={"Get Involved"} clickedChoice={clickedChoice}  />
       <NavBarButton name={"Contact Us"} clickedChoice={clickedChoice} />
       <NavBarButton name={"Donate"} clickedChoice={clickedChoice} />
-      <NavBarButton name={"Admin"} clickedChoice={clickedChoice} />
+      {/* <NavBarButton name={"Admin"} clickedChoice={clickedChoice} /> */}
 
     </ul>
   );

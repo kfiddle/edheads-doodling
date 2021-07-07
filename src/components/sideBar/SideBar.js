@@ -11,13 +11,13 @@ const SideBar = (props) => {
   useEffect(() => {
     const slideTimer = setTimeout(() => {
       setSideBarPosition(70);
-    }, 100);
+    }, 1600);
   }, []);
 
   return (
     <div
       className={styles.sideBar}
-      style={{ transform: `translateX(${sideBarPosition}vw)` }}
+      style={{ transform: `translate(70, ${sideBarPosition}vh)` }}
     >
       <div className={styles.menuContainer}>
         <h3 className={styles.newsHeader}>Latest News</h3>

@@ -1,17 +1,17 @@
 .aboutUsDiv {
-  /* height: 80vh; */
-  /* position: absolute; */
+  height: 80vh;
+  position: absolute;
 
-  position: relative;
-  margin-top: 25vh;
+  /* position: relative;
+  margin-top: 25vh; */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* top: 25vh; */
+  top: 25vh;
   transition: transform 1.1s cubic-bezier(0.4, 0, 0.4, 1);
   width: 100vw;
- 
-  /* z-index: 1; */
+
+  z-index: 1;
 }
 
 .textBoxHeading {
@@ -37,5 +37,5 @@
 }
 
 .gamesLink:hover {
-    color:aqua;
+  color: aqua;
 }
