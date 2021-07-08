@@ -1,5 +1,5 @@
 import TextBox from "../textBox/TextBox";
-import paulStem from "../../assets/robot.PNG";
+import paulStem from "../../assets/Paul Stem.svg";
 import styles from "./SignUpPanel.module.css";
 
 const SignUpPanel = () => {

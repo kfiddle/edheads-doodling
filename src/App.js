@@ -38,16 +38,15 @@ function App() {
       setChoice(choice);
     }
 
-    console.log(choice)
-    console.log(singleGame)
+    console.log(choice);
+    console.log(singleGame);
   };
 
   const gameChosen = (gameTitle) => {
     setChosenGame(gameTitle);
-    
   };
 
-  if (!ourGames) {
+  if (welcome) {
     return (
       <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
@@ -63,14 +62,26 @@ function App() {
     );
   } else if (ourGames) {
     return (
-      <div>
+      <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
-        <GamesPanel whichGame={gameChosen} gameClicked={chosenPanelHandler}  />
+        <GamesPanel whichGame={gameChosen} gameClicked={chosenPanelHandler} />
         <SideBar />
       </div>
     );
   } else if (singleGame) {
     return <SingleGame gameTitle={chosenGame} />;
+  } 
+  
+  else if (aboutUs) {
+    return (
+      <div className="App">
+        <Header clickedChoice={chosenPanelHandler} />
+        <Welcome gamesClicked={chosenPanelHandler} />
+        <AboutUs />
+        <SideBar />
+     
+      </div>
+    );
   }
 }
 
