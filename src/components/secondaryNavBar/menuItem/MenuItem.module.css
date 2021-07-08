@@ -1,17 +1,18 @@
 .navItemDiv {
-    padding: 0 3rem;
-    height: 100%;
+    padding: .5rem 3rem 0.5rem 3rem;
+    height: 50%;
   }
   
   .hovered {
     /* background: white; */
-    border-bottom: groove .5rem white ;
+    border-bottom: groove .5rem wheat ;
   }
   
   .navBarItem {
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
+    margin: 1rem 0 0 0;
   }
   
   /* .hoveredText {

@@ -1,23 +1,51 @@
+import { useState } from "react";
+
 import NavBarButton from "./NavBarButton";
 
 import styles from "./TopNavBar.module.css";
 
+const optionsList = [
+  {
+    title: "About Us",
+    active: false,
+  },
+  {
+    title: "Our Games",
+    active: false,
+  },
+  {
+    title: "Get Involved",
+    active: false,
+  },
+  {
+    title: "Contact Us",
+    active: false,
+  },
+  {
+    title: "Donate",
+    active: false,
+  },
+];
+
 const TopNavBar = (props) => {
+  const [activeChoice, setActiveChoice] = useState("");
 
-  const clickedChoice = choice => {
-    props.clickedChoice(choice);
+  const setActive = (option) => {};
 
-  }
+  const clickedChoice = (choiceObject) => {
+    props.clickedChoice(choiceObject.title);
 
-  return (
-    <ul className={styles.topNavBar}>
-      <NavBarButton name={"About Us"} clickedChoice={clickedChoice} />
-      <NavBarButton name={"Our Games"} clickedChoice={clickedChoice}  />
-      <NavBarButton name={"Get Involved"} clickedChoice={clickedChoice}  />
-      <NavBarButton name={"Contact Us"} clickedChoice={clickedChoice} />
-      <NavBarButton name={"Donate"} clickedChoice={clickedChoice} />
-    </ul>
-  );
+    optionsList.forEach((option) => (option.active = false));
+    choiceObject.active = true;
+
+    setActiveChoice(choiceObject);
+  };
+
+  const displayedMenuList = optionsList.map((option) => (
+    <NavBarButton optionObject={option} clickedChoice={clickedChoice} />
+  ));
+
+  return <ul className={styles.topNavBar}>{displayedMenuList}</ul>;
 };
 
 export default TopNavBar;

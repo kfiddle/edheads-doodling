@@ -1,16 +1,17 @@
 .navButton {
   background: #d2d063;
   border: none;
-  border-top-left-radius: .75rem;
-  border-top-right-radius: .75rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
   cursor: pointer;
   color: white;
   display: inline-block;
-  font-size: 1.25rem;
-    margin: 0 1rem;
-    padding-top: .5rem;
-    transition: .5s;
-    width: 12rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 1rem;
+  padding-top: 0.5rem;
+  transition: 0.5s;
+  width: 12rem;
 }
 
 .navButton:hover {
