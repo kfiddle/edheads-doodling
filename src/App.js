@@ -34,21 +34,29 @@ function App() {
     }
   };
 
-  return (
-    <div className="App">
-      <Header clickedChoice={chosenPanelHandler} />
-      {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
-      {aboutUs && <AboutUs />}
-      {ourGames && <GamesPanel />}
-      {sideBarOpen && <SideBar />}
-
-      <InfoGraphic words={"InfoGraphic will live here..."} />
-      <SignUpPanel />
-      <InfoGraphic words={"Quotes and testimony will live here..."} />
-      <DonatePanel />
-      <Footer />
-    </div>
-  );
+  if (!ourGames) {
+    return (
+      <div className="App">
+        <Header clickedChoice={chosenPanelHandler} />
+        {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
+        {aboutUs && <AboutUs />}
+        {sideBarOpen && <SideBar />}
+        <InfoGraphic words={"InfoGraphic will live here..."} />
+        <SignUpPanel />
+        <InfoGraphic words={"Quotes and testimony will live here..."} />
+        <DonatePanel />
+        <Footer />
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Header clickedChoice={chosenPanelHandler} />
+        <GamesPanel />
+        <SideBar />
+      </div>
+    );
+  }
 }
 
 export default App;
