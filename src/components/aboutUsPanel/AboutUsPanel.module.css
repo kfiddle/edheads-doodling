@@ -25,6 +25,7 @@
   .basicText {
     margin: 0;
     font-size: 1.2rem;
+    font-weight: 500;
     line-height: 1.7em;
     padding: 0.5rem 0rem;
   }

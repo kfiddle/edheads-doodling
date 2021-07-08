@@ -5,7 +5,7 @@
   background: url("../../assets/laboratoryNew.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 1s ease;
+  transition: 3s;
 }
 
 .welcomeContainer{

@@ -55,7 +55,7 @@ const Welcome = (props) => {
     }, 3000);
     setTimeout(() => {
       setWelcomeScreenOpacity(0);
-    }, 4000);
+    }, 3500);
   };
 
   return (

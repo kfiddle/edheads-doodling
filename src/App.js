@@ -28,7 +28,7 @@ function App() {
     if (choice === "Explore Games") {
       setTimeout(() => {
         setChoice("Our Games");
-      }, 4500);
+      }, 5200);
     } else {
       setChoice(choice);
     }

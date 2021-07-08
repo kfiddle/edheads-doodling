@@ -11,7 +11,7 @@ const SideBar = (props) => {
   useEffect(() => {
     const slideTimer = setTimeout(() => {
       setSideBarPosition(0);
-    }, 1600);
+    }, 1400);
   }, []);
 
   return (
