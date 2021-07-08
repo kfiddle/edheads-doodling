@@ -22,12 +22,13 @@ function App() {
   const gamesPanel = choice === "Games Panel";
 
   const sideBarOpen = aboutUs || ourGames;
+  const welcomeScreenOpen = welcome || aboutUs;
 
   const chosenPanelHandler = (choice) => {
     if (choice === "Explore Games") {
       setTimeout(() => {
         setChoice("Our Games");
-      }, 5000);
+      }, 4500);
     } else {
       setChoice(choice);
     }
@@ -36,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <Header clickedChoice={chosenPanelHandler} />
-      <Welcome gamesClicked={chosenPanelHandler} />
+      {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
       {aboutUs && <AboutUs />}
       {ourGames && <GamesPanel />}
       {sideBarOpen && <SideBar />}
