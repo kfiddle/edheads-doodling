@@ -10,14 +10,15 @@ const SideBar = (props) => {
 
   useEffect(() => {
     const slideTimer = setTimeout(() => {
-      setSideBarPosition(70);
+      setSideBarPosition(0);
     }, 1600);
   }, []);
 
   return (
     <div
       className={styles.sideBar}
-      style={{ transform: `translate(70, ${sideBarPosition}vh)` }}
+      // style={{ transform: `translateY(${sideBarPosition}vh)` }}
+      style={{ top: `${sideBarPosition}%` }}
     >
       <div className={styles.menuContainer}>
         <h3 className={styles.newsHeader}>Latest News</h3>
