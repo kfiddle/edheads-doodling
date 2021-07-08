@@ -28,17 +28,10 @@ const optionsList = [
 ];
 
 const TopNavBar = (props) => {
-  const [activeChoice, setActiveChoice] = useState("");
-
-  const setActive = (option) => {};
-
   const clickedChoice = (choiceObject) => {
     props.clickedChoice(choiceObject.title);
-
     optionsList.forEach((option) => (option.active = false));
     choiceObject.active = true;
-
-    setActiveChoice(choiceObject);
   };
 
   const displayedMenuList = optionsList.map((option) => (
