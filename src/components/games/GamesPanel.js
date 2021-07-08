@@ -46,8 +46,15 @@ const GamesPanel = (props) => {
     }, 10);
   }, []);
 
+  const gameClicked = gameTitle => {
+    props.gameClicked('Single Game');
+    props.whichGame(gameTitle);
+
+  } ;
+
+
   const allScenes = gamesObjects.map((scene) => (
-    <GameScene gameObject={scene} key={Math.random()} />
+    <GameScene gameObject={scene} gameChosen={gameClicked} key={Math.random()} />
   ));
 
   return (

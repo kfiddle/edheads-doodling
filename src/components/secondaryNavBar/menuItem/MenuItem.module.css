@@ -4,7 +4,8 @@
   }
   
   .hovered {
-    background: white;
+    /* background: white; */
+    border-bottom: groove .5rem white ;
   }
   
   .navBarItem {
@@ -13,6 +14,6 @@
     font-weight: 500;
   }
   
-  .hoveredText {
+  /* .hoveredText {
     color: #d2d063;
-  }
+  } */

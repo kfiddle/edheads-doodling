@@ -16,12 +16,13 @@
 .signUpContainer{
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin: 10rem;
 
 }
 
 
-
 .paulStemDiv {
+
   /* display: flex;
   justify-content: flex-start;
   align-items: center; 

@@ -48,14 +48,13 @@ const Welcome = (props) => {
     props.gamesClicked("Explore Games");
     setRocketClicked(true);
     launchRobot(0);
-    // setTextBoxOpacity(0);
-
+    
     setTimeout(() => {
       setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
     }, 3000);
     setTimeout(() => {
       setWelcomeScreenOpacity(0);
-    }, 3500);
+    }, 3300);
   };
 
   return (

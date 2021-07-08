@@ -26,12 +26,9 @@ const SideBar = (props) => {
           Parent and Teachers: Read Dan Edwards' blog posts to learn more about
           how to raise a STEM-oriented, critically thinking child!
         </p>
-
-        <img src={whiteDots}></img>
-        <div className={styles.adOrVideo}></div>
-        <div className={styles.adOrVideo}></div>
       </div>
-      ;
+      <div className={styles.adOrVideoContainer}>Media Container</div>
+      <div className={styles.adOrVideoContainer}>Media Container</div>
     </div>
   );
 };
