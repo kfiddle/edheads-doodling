@@ -1,0 +1,15 @@
+.outerDiv {
+  margin: 2rem 50rem 2rem 1rem;
+  width: 50vw;
+}
+
+.innerDiv {
+  background: lightseagreen;
+  border-radius: 12px;
+  height: 5rem;
+  padding-top: 1rem;
+}
+
+.innerDiv h3:hover {
+  color: chartreuse;
+}

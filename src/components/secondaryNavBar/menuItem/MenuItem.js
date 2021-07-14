@@ -14,7 +14,7 @@ const MenuItem = (props) => {
   };
 
   const sendUpChoice = () => {
-    props.clicked(props.title);
+    props.clickedChoice();
 
     setHighlighted(true);
   };
