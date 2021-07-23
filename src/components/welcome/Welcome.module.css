@@ -11,7 +11,8 @@
 .welcomeContainer{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 25vh auto;
+  height: 40vh;
+  /* margin: 25vh auto; */
 }
 
 .aboutUs {
