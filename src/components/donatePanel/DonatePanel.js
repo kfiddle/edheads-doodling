@@ -1,5 +1,5 @@
 import TextBox from "../textBox/TextBox";
-import izzy from "../../assets/Izzy Honda.svg";
+import izzy from "../../assets/Izzy Honda-edit-01.svg";
 import styles from "./DonatePanel.module.css";
 
 const DonatePanel = () => {

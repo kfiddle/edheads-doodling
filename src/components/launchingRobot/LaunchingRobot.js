@@ -1,6 +1,6 @@
 // import robot from "../../assets/robot.PNG";
 
-import robot from "../../assets/robot.svg";
+import robot from "../../assets/robot-edit-01.svg";
 
 
 
