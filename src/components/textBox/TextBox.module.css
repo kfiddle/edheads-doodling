@@ -3,12 +3,12 @@
   background: white;
   border: 4px solid #d2d063;
   border-radius: 4rem;
-  margin: 18vh 0 10vh 10vw;
+  /* margin: 18vh 0 10vh 10vw; */
   padding: 2rem;
   position: relative;
   text-align: left;
   width: 80%;
-  height: 50%;
+  height: 80%;
   transition: 1s;
 }
 
@@ -29,7 +29,7 @@
   border-right: 79px solid #fff;
   border-top: 52px solid transparent;
   content: "";
-  left: -7.25rem;
+  left: -7.125rem;
   top: 5.35rem;
   position: absolute;
 }

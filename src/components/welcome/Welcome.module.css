@@ -6,12 +6,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: 3s;
+  position: relative;
 }
 
 .welcomeContainer{
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 40vh;
+  /* height: 40vh; */
   /* margin: 25vh auto; */
 }
 
@@ -80,14 +85,14 @@
 }
 
 .robotDiv {
-  padding-top: 5vh;
-  margin-right: 7vw;
+  /* padding-top: 5vh;
+  margin-right: 7vw; */
 }
 
 .robot {
-  width: 85%;
+  /* width: 85%;
   margin-top: 5vh;
-  margin-right: 20vw;
+  margin-right: 20vw; */
 }
 
 /* .rocketTrail {
