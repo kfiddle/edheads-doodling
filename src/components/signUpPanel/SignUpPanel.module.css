@@ -11,6 +11,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-position: 0 35%; */
 }
 

@@ -8,8 +8,9 @@
   position: relative;
   text-align: left;
   width: 80%;
-  height: 80%;
+  margin-bottom: 5rem;  
   transition: 1s;
+  
 }
 
 .left:before {

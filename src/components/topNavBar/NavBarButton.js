@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import styles from "./NavBarButton.module.css";
 
+
 const NavBarButton = (props) => {
   const { title, active } = props.optionObject;
 //   const [highlighted, setHighlighted] = useState(false);
@@ -16,9 +17,13 @@ const NavBarButton = (props) => {
   };
 
   return (
+
+     
     <button className={styles.navButton} onClick={clicked} style={styling}>
       {title}
+
     </button>
+
   );
 };
 

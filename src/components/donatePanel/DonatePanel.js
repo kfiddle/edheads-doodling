@@ -8,7 +8,7 @@ const DonatePanel = () => {
       <div className={styles.donateContainer}>
         <TextBox direction={"right"} className={styles.textBox}>
           <p className={styles.aboutUs}>Get Involved</p>
-          <h3 className={styles.welcomeTitle}>Get Involved Title</h3>
+          <h3 className={styles.welcomeTitle}>Get Involved Title Two Lines for Title</h3>
 
           <p className={styles.basicText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -67,7 +67,7 @@ const Welcome = (props) => {
         <TextBox direction={"right"} extraClass={"welcomeText"} opacity ={textBoxOpacity}>
           <p className={styles.aboutUs}>ABOUT US</p>
           <h3 className={styles.welcomeTitle}>
-            Welcome to Edheads. Inspiring STEM careers through games!
+            Welcome! Edheads inspire STEM careers through games!
           </h3>
 
           <p className={styles.basicText}>
