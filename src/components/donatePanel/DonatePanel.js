@@ -6,26 +6,30 @@ const DonatePanel = () => {
   return (
     <div className={styles.donatePanelDiv}>
       <div className={styles.donateContainer}>
-        <TextBox direction={"right"} className={styles.textBox}>
-          <p className={styles.aboutUs}>Get Involved</p>
-          <h3 className={styles.welcomeTitle}>Get Involved Title Two Lines for Title</h3>
+        <div>
+          <TextBox direction={"right"} className={styles.textBox}>
+            <p className={styles.aboutUs}>Get Involved</p>
+            <h3 className={styles.welcomeTitle}>
+              Get Involved Title Two Lines for Title
+            </h3>
 
-          <p className={styles.basicText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <p className={styles.basicText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper
-            luctus tempus. Nulla facilisi. Proin placerat nulla arcu.
-          </p>
+            <p className={styles.basicText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p className={styles.basicText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              semper luctus tempus. Nulla facilisi. Proin placerat nulla arcu.
+            </p>
 
-          <div className={styles.buttonRow}>
-            <button className={styles.buttonToTheGames}>Sign Up</button>
+            <div className={styles.buttonRow}>
+              <button className={styles.buttonToTheGames}>Sign Up</button>
 
-            <div className={styles.discoverUs}>
-              <button className={styles.buttonToAboutUs}>Lorem Ipsum!</button>
+              <div className={styles.discoverUs}>
+                <button className={styles.buttonToAboutUs}>Lorem Ipsum!</button>
+              </div>
             </div>
-          </div>
-        </TextBox>
+          </TextBox>
+        </div>
 
         <div className={styles.izzyDiv}>
           <img src={izzy} className={styles.izzy}></img>
