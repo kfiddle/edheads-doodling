@@ -17,7 +17,6 @@ const SideBar = (props) => {
   return (
     <div
       className={styles.sideBar}
-      // style={{ transform: `translateY(${sideBarPosition}vh)` }}
       style={{ top: `${sideBarPosition}%` }}
     >
       <div className={styles.menuContainer}>
