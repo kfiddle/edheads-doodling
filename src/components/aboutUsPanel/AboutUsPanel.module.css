@@ -3,6 +3,14 @@
   top: 25vh;
   transition: transform 1.1s cubic-bezier(0.4, 0, 0.4, 1);
 
+
+}
+
+.textBoxContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutUsDiv {
@@ -18,8 +26,10 @@
   /* top: 25vh; */
   transition: transform 1.1s cubic-bezier(0.4, 0, 0.4, 1);
   width: 100vw;
-
   z-index: 1;
+  overscroll-behavior: none;
+  
+
 }
 
 .textBoxHeading {

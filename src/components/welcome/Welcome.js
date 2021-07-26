@@ -68,13 +68,10 @@ const Welcome = (props) => {
           <TextBox
             direction={"right"}
             extraClass={"welcomeText"}
-            opacity={textBoxOpacity}
-          >
-            <p className={styles.aboutUs}>ABOUT US</p>
+            opacity={textBoxOpacity}><p className={styles.aboutUs}>ABOUT US</p>
             <h3 className={styles.welcomeTitle}>
               Welcome! Edheads inspire STEM careers through games!
             </h3>
-
             <p className={styles.basicText}>
               Our non-profit provides STEM games to empower k-12 students.
             </p>
@@ -83,7 +80,6 @@ const Welcome = (props) => {
               students can learn STEM lessons with real life and professional
               examples.
             </p>
-
             <div className={styles.buttonRow}>
               <button
                 className={styles.buttonToTheGames}
@@ -100,6 +96,7 @@ const Welcome = (props) => {
                 <ForwardArrow />
               </div>
             </div>
+        
           </TextBox>
         </div>
 
