@@ -1,5 +1,6 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="800px" height="600px" viewBox="340 70 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+width="300px" height="620px" viewBox="450 50 300 620">
 <defs>
 <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="122.12500000000001" y1="15.1" x2="158.97500000000002" y2="15.1" spreadMethod="pad">
 <stop  offset="0.7843137254901961%" stop-color="#777777"/>

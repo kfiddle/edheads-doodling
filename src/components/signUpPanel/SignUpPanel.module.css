@@ -10,23 +10,23 @@
   background: url("../../assets/engineering-2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 35%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-position: 0 35%; */
 }
 
-.signUpContainer{
+.signUpContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 10rem;
-
+  position: absolute;
+  bottom: 0;
+  width: 80%;
 }
 
-
 .paulStemDiv {
-
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-  margin-left: 0;  */
+transform: translate(15%, 7%);
 }
 
 .aboutUs {
@@ -35,27 +35,25 @@
   font-weight: 600;
 }
 
-
 .welcomeTitle {
   color: #d2d063;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0;
 }
 
-.basicText{
+.basicText {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.5em;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
-.buttonRow{
+.buttonRow {
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;;
-
+  margin-top: 1rem;
 }
 
 .buttonToTheGames {
@@ -74,9 +72,10 @@
   padding: 1rem 2rem;
 }
 
-.discoverUs{
+.discoverUs {
   display: flex;
-  padding-left: 1rem;}
+  padding-left: 1rem;
+}
 
 .buttonToAboutUs {
   background: transparent;
@@ -103,4 +102,3 @@
   margin-top: 5vh;
   margin-right: 20vw;
 }
-

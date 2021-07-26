@@ -1,18 +1,29 @@
 .welcomeDiv {
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   border-bottom: solid darkslategray 1rem;
   background: url("../../assets/laboratoryNew.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 3s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
 }
 
-.welcomeContainer{
+.welcomeContainer {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 25vh auto;
+  /* height: 40vh; */
+  /* margin: 25vh auto; */
 }
+
 
 .aboutUs {
   color: darkorange;
@@ -20,27 +31,25 @@
   font-weight: 600;
 }
 
-
 .welcomeTitle {
   color: #d2d063;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 0;
 }
 
-.basicText{
+.basicText {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.5em;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
-.buttonRow{
+.buttonRow {
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;;
-
+  margin-top: 1rem;
 }
 
 .buttonToTheGames {
@@ -59,9 +68,10 @@
   padding: 1rem 2rem;
 }
 
-.discoverUs{
+.discoverUs {
   display: flex;
-  padding-left: 1rem;}
+  padding-left: 1rem;
+}
 
 .buttonToAboutUs {
   background: transparent;
@@ -79,14 +89,13 @@
 }
 
 .robotDiv {
-  padding-top: 5vh;
-  margin-right: 7vw;
+  transform: translate(-33%, -10%);
 }
 
 .robot {
-  width: 85%;
+  /* width: 85%;
   margin-top: 5vh;
-  margin-right: 20vw;
+  margin-right: 20vw; */
 }
 
 /* .rocketTrail {

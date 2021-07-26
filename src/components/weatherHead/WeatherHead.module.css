@@ -1,6 +1,6 @@
-
-
 .weather-girl {
-padding-right: 10vw;
-
+  /* padding-right: 10vw; */
+  width: 15%;
+  transform: translateY(3%);
+  z-index: 3;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import WeatherHead from "../weatherHead/WeatherHead";
 
 import NavBarButton from "./NavBarButton";
 
@@ -38,7 +39,18 @@ const TopNavBar = (props) => {
     <NavBarButton optionObject={option} clickedChoice={clickedChoice} />
   ));
 
-  return <ul className={styles.topNavBar}>{displayedMenuList}</ul>;
+  return <ul className={styles.topNavBar}> 
+  
+    <NavBarButton optionObject={optionsList[0]} clickedChoice={clickedChoice}/>
+    <NavBarButton optionObject={optionsList[1]} clickedChoice={clickedChoice}/>
+    <NavBarButton optionObject={optionsList[2]} clickedChoice={clickedChoice}/>
+    <NavBarButton optionObject={optionsList[3]} clickedChoice={clickedChoice}/>
+    <WeatherHead />
+    <NavBarButton left={true }optionObject={optionsList[4]} clickedChoice={clickedChoice}/>
+  
+  
+  
+  </ul>;
 };
 
 export default TopNavBar;

@@ -1,9 +1,14 @@
 .donatePanelDiv {
-  
+  position: relative;
   width: 100vw;
   height: 100vh;
   border-top: solid darkslategray 1rem;
   border-bottom: 8px solid #d2d063;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   background: url("../../assets/engineering.png");
   background-size: cover;
@@ -12,17 +17,18 @@
 }
 
 .donateContainer{
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 10rem;
+  /* margin: 10rem; */
 
 }
 
 .izzyDiv {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 0; */
+transform: translate(-35%, 10%);
 }
 
 .izzy {

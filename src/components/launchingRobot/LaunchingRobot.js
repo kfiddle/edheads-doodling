@@ -1,4 +1,8 @@
-import robot from "../../assets/robot.PNG";
+// import robot from "../../assets/robot2.svg";
+
+import robot from "../../assets/robot2.svg";
+
+
 
 import styles from "./LaunchingRobot.module.css";
 

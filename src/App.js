@@ -51,8 +51,7 @@ function App() {
       <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
         {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
-        {aboutUs && <AboutUs />}
-        {sideBarOpen && <SideBar />}
+        {/* <SideBar /> */}
         <InfoGraphic words={"InfoGraphic will live here..."} />
         <SignUpPanel />
         <InfoGraphic words={"Quotes and testimony will live here..."} />
@@ -76,7 +75,6 @@ function App() {
     return (
       <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
-        <Welcome gamesClicked={chosenPanelHandler} />
         <AboutUs />
         <SideBar />
      

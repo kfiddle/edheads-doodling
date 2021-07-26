@@ -3,6 +3,7 @@ import { useState } from "react";
 import TextBox from "../textBox/TextBox";
 import ForwardArrow from "../forwardArrow/ForwardArrow";
 import LaunchingRobot from "../launchingRobot/LaunchingRobot";
+
 import RocketCloud from "../rocketCloud/RocketCloud";
 
 import rocketTrail from "../../assets/rocketTrail.png";
@@ -48,7 +49,7 @@ const Welcome = (props) => {
     props.gamesClicked("Explore Games");
     setRocketClicked(true);
     launchRobot(0);
-    
+
     setTimeout(() => {
       setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
     }, 3000);
@@ -63,40 +64,41 @@ const Welcome = (props) => {
       style={{ opacity: welcomeScreenOpacity }}
     >
       <div className={styles.welcomeContainer}>
-        <TextBox direction={"right"} extraClass={"welcomeText"} opacity ={textBoxOpacity}>
-          <p className={styles.aboutUs}>ABOUT US</p>
-          <h3 className={styles.welcomeTitle}>
-            Welcome to Edheads. Inspiring STEM careers through games!
-          </h3>
-
-          <p className={styles.basicText}>
-            Our non-profit provides STEM games to empower k-12 students.
-          </p>
-          <p className={styles.basicText}>
-            Teachers use our games to bring life to their curriculum, so
-            students can learn STEM lessons with real life and professional
-            examples.
-          </p>
-
-          <div className={styles.buttonRow}>
-            <button
-              className={styles.buttonToTheGames}
-              onClick={rocketSequence}
-            >
-              Explore Our Games!
-            </button>
-
-            <div className={styles.discoverUs}>
-
-              <button className={styles.buttonToAboutUs}>
-                Discover more about us!
+        <div>
+          <TextBox
+            direction={"right"}
+            extraClass={"welcomeText"}
+            opacity={textBoxOpacity}><p className={styles.aboutUs}>ABOUT US</p>
+            <h3 className={styles.welcomeTitle}>
+              Welcome! Edheads inspire STEM careers through games!
+            </h3>
+            <p className={styles.basicText}>
+              Our non-profit provides STEM games to empower k-12 students.
+            </p>
+            <p className={styles.basicText}>
+              Teachers use our games to bring life to their curriculum, so
+              students can learn STEM lessons with real life and professional
+              examples.
+            </p>
+            <div className={styles.buttonRow}>
+              <button
+                className={styles.buttonToTheGames}
+                onClick={rocketSequence}
+              >
+                Explore Our Games!
               </button>
 
-              <ForwardArrow />
+              <div className={styles.discoverUs}>
+                <button className={styles.buttonToAboutUs}>
+                  Discover more about us!
+                </button>
+
+                <ForwardArrow />
+              </div>
             </div>
-            
-          </div>
-        </TextBox>
+        
+          </TextBox>
+        </div>
 
         <div className={styles.robotDiv}>
           <LaunchingRobot

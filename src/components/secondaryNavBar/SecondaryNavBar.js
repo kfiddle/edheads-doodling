@@ -13,6 +13,10 @@ const SecondaryNavBar = (props) => {
     }, 700 );
   }, []);
 
+  const clickedChoice = (title) => {
+    props.clickedChoice(title)
+  }
+
 
   return (
     <div
@@ -21,7 +25,7 @@ const SecondaryNavBar = (props) => {
     >
       <div className={styles.innerContainer}>
         <MenuItem title={"Terms of Use"}  locked={false} />
-        <MenuItem title={"FAQ"} clickedChoice={props.clickedChoice} locked={false} />
+        <MenuItem title={"FAQ"} clickedChoice={clickedChoice} locked={false} />
         <MenuItem title={"Partners"} locked={false} />
         <MenuItem title={"Awards"} locked={false} />
         <MenuItem title={"Activity Help"} locked={false} />

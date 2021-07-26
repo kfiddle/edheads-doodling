@@ -1,5 +1,10 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="600px" height="720px" viewBox="300 0 600 620">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" 
+width="600px" height="720px" viewBox="300 0 600 620"> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" 
+width="300px" height="700px" viewBox="450 25 300 700">
+
 <defs>
 <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="6.6625000000000005" fx="0" fy="0" gradientTransform="matrix( 1, 0, 0, 1.1069418386491556, 6.7,7.45) " spreadMethod="pad">
 <stop  offset="19.607843137254903%" stop-color="#918F25"/>
