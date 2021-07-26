@@ -46,7 +46,7 @@ const TopNavBar = (props) => {
     <NavBarButton optionObject={optionsList[2]} clickedChoice={clickedChoice}/>
     <NavBarButton optionObject={optionsList[3]} clickedChoice={clickedChoice}/>
     <WeatherHead />
-    <NavBarButton optionObject={optionsList[4]} clickedChoice={clickedChoice}/>
+    <NavBarButton left={true }optionObject={optionsList[4]} clickedChoice={clickedChoice}/>
   
   
   
