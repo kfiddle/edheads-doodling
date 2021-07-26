@@ -7,11 +7,11 @@ const NavBarButton = (props) => {
   const { title, active } = props.optionObject;
 //   const [highlighted, setHighlighted] = useState(false);
 
-const ifLeftShift = props.left ? 'translateX(-5vw)' : 'translateX(3vw)';
+const ifLeftShift = props.left ? 'translateX(-5vw)' : 'translateX(4vw)';
 
   const styling = active
-    ? { height: "5rem", fontSize: "1.5rem" }
-    : { height: "3rem", fontSize: "1.25rem" };
+    ? { height: "5rem", fontSize: "1.5rem", transform: ifLeftShift }
+    : { height: "3rem", fontSize: "1.25rem", transform: ifLeftShift };
 
   const clicked = () => {
     props.clickedChoice(props.optionObject);
@@ -21,7 +21,7 @@ const ifLeftShift = props.left ? 'translateX(-5vw)' : 'translateX(3vw)';
   return (
 
      
-    <button className={styles.navButton} onClick={clicked} style={styling} style={{transform: ifLeftShift}}>
+    <button className={styles.navButton} onClick={clicked} style={styling}>
       {title}
 
     </button>
