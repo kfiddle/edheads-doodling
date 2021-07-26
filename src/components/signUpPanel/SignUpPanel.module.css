@@ -26,10 +26,7 @@
 }
 
 .paulStemDiv {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-  margin-left: 0;  */
+transform: translate(15%, 7%);
 }
 
 .aboutUs {

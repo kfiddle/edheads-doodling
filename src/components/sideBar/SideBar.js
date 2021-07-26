@@ -5,14 +5,14 @@ import whiteDots from "../../assets/whiteDots.png";
 import styles from "./SideBar.module.css";
 
 const SideBar = (props) => {
-  const [sideBarPosition, setSideBarPosition] = useState(100);
+  const [sideBarPosition, setSideBarPosition] = useState(0);
   const [sideBarLocked, setSideBarLock] = useState(false);
 
-  useEffect(() => {
-    const slideTimer = setTimeout(() => {
-      setSideBarPosition(0);
-    }, 1400);
-  }, []);
+  // useEffect(() => {
+  //   const slideTimer = setTimeout(() => {
+  //     setSideBarPosition(0);
+  //   }, 1400);
+  // }, []);
 
   return (
     <div
