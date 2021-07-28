@@ -53,13 +53,13 @@ function App() {
     return (
       <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
-        <AdPanel words={"InfoGraphic will live here..."} marginTop={"25vh"}/>
+        <AdPanel marginTop={"25vh"} longAd={true}/>
 
         {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
         {/* <SideBar /> */}
-        <AdPanel words={"InfoGraphic will live here..."} marginTop={"0vh"}/>
+        <AdPanel marginTop={"0vh"} longAd={false}/>
         <SignUpPanel />
-        <AdPanel words={"Quotes and testimony will live here..."} />
+        <AdPanel marginTop={"0vh"} longAd={false} />
         <DonatePanel />
         <Footer />
       </div>
