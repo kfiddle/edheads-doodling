@@ -1,21 +1,40 @@
 .navButton {
+  
   background: #d2d063;
-    border: none;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-    cursor: pointer;
-    color: white;
-    /* display: inline-block; */
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin: 0 .5rem;
-    padding: .5rem 1rem;
-    transition: 0.5s;
-    width: 12rem;
-    white-space: nowrap;
+  border: none;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
+  width: 12rem;
+  white-space: nowrap;
 }
+
+nav a {
+  color: white;
+  font-size: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+nav li {
+  text-align: center;
+}
+
+
 
 .navButton:hover {
   font-weight: 900;
   z-index: 1;
+}
+
+nav a:active {
+  height: 5rem;
+  font-size: 1.5rem;
 }

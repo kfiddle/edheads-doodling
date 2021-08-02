@@ -8,3 +8,25 @@
   height: 5rem;
   margin-bottom: 0;
 }
+
+.navButton {
+  background: #d2d063;
+    border: none;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    cursor: pointer;
+    color: white;
+    /* display: inline-block; */
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 .5rem;
+    padding: .5rem 1rem;
+    transition: 0.5s;
+    width: 12rem;
+    white-space: nowrap;
+}
+
+.navButton:hover {
+  font-weight: 900;
+  z-index: 1;
+}

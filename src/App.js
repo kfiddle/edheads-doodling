@@ -1,6 +1,14 @@
 import { useState } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "./components/header/Header";
+
+import Layout from "./layout/Layout";
+
+import WelcomePage from "./pages/WelcomePage";
+import GamesPage from "./pages/GamesPage";
+import AboutUsPage from "./pages/AboutUsPage";
+
 import Welcome from "./components/welcome/Welcome";
 import SignUpPanel from "./components/signUpPanel/SignUpPanel";
 import DonatePanel from "./components/donatePanel/DonatePanel";
@@ -16,7 +24,6 @@ import "./App.css";
 const gamesList = ["firstGame", "secondGame", "thirdGame", "fourthGame"];
 
 // const adsList =[one:]
-
 
 function App() {
   const [choice, setChoice] = useState("Welcome");
@@ -49,55 +56,73 @@ function App() {
     setChosenGame(gameTitle);
   };
 
-  if (welcome) {
-    return (
-      <div className="App">
-        <Header clickedChoice={chosenPanelHandler} />
-        <AdPanel marginTop={"25vh"} longAd={true}/>
+  return (
+    <Layout>
+      <Switch>
+        <Route path={"/"} exact>
+          <Redirect to={"/welcome"} />
+        </Route>
 
-        {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
-        {/* <SideBar /> */}
-        <AdPanel marginTop={"0vh"} longAd={false}/>
-        <SignUpPanel />
-        <AdPanel marginTop={"0vh"} longAd={false} />
-        <DonatePanel />
-        <Footer />
-      </div>
-    );
-  } else if (ourGames) {
-    return (
-      <div className="App">
-        <Header clickedChoice={chosenPanelHandler} />
-        <GamesPanel whichGame={gameChosen} gameClicked={chosenPanelHandler} />
-        <SideBar />
-      </div>
-    );
-  } else if (singleGame) {
-    return <SingleGame gameTitle={chosenGame} />;
-  } 
-  
-  else if (aboutUs) {
-    return (
-      <div className="App">
-        <Header clickedChoice={chosenPanelHandler} />
-        <AboutUs />
-        <SideBar />
-     
-      </div>
-    );
-  }
+        <Route path={'/welcome'}>
+          <WelcomePage />
+        </Route>
+
+        <Route path={"/games"}>
+          <GamesPage />
+        </Route>
+        <Route path={"/about-us"}>
+          <AboutUsPage />
+        </Route> 
+         {/* <Route path={"/sign-up"}>
+          <SignUpPanel />
+        </Route>
+        <Route path={"/donate"}>
+          <DonatePanel />
+        </Route> */}
+       
+      </Switch>
+    </Layout>
+  );
 }
 
 export default App;
+//   if (welcome) {
+//     return (
+//       <div className="App">
+//         <Header clickedChoice={chosenPanelHandler} />
+//         <AdPanel marginTop={"25vh"} longAd={true}/>
 
+//         {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
+//         {/* <SideBar /> */}
+//         <AdPanel marginTop={"0vh"} longAd={false}/>
+//         <SignUpPanel />
+//         <AdPanel marginTop={"0vh"} longAd={false} />
+//         <DonatePanel />
+//         <Footer />
+//       </div>
+//     );
+//   } else if (ourGames) {
+//     return (
+//       <div className="App">
+//         <Header clickedChoice={chosenPanelHandler} />
+//         <GamesPanel whichGame={gameChosen} gameClicked={chosenPanelHandler} />
+//         <SideBar />
+//       </div>
+//     );
+//   } else if (singleGame) {
+//     return <SingleGame gameTitle={chosenGame} />;
+//   }
 
+//   else if (aboutUs) {
+//     return (
+//       <div className="App">
+//         <Header clickedChoice={chosenPanelHandler} />
+//         <AboutUs />
+//         <SideBar />
 
-// return (
+//       </div>
+//     );
+//   }
+// }
 
-
-
-
-
-
-
-// )
+// export default App;

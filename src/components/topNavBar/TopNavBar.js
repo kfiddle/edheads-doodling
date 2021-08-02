@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import WeatherHead from "../weatherHead/WeatherHead";
 
 import NavBarButton from "./NavBarButton";
@@ -39,18 +41,51 @@ const TopNavBar = (props) => {
     <NavBarButton optionObject={option} clickedChoice={clickedChoice} />
   ));
 
-  return <ul className={styles.topNavBar}> 
-  
-    <NavBarButton optionObject={optionsList[0]} clickedChoice={clickedChoice}/>
-    <NavBarButton optionObject={optionsList[1]} clickedChoice={clickedChoice}/>
-    <NavBarButton optionObject={optionsList[2]} clickedChoice={clickedChoice}/>
-    <NavBarButton optionObject={optionsList[3]} clickedChoice={clickedChoice}/>
-    <WeatherHead />
-    <NavBarButton left={true }optionObject={optionsList[4]} clickedChoice={clickedChoice}/>
-  
-  
-  
-  </ul>;
+  return (
+    <nav>
+      <ul className={styles.topNavBar}>
+        <li className={styles.navButton}>
+          <NavLink to={"/welcome"} activeClassName={styles.active}>
+            Welcome
+          </NavLink>
+        </li>
+        <li className={styles.navButton}>
+          <NavLink to={"/about-us"} activeClassName={styles.active}>About Us</NavLink>
+        </li>
+        <li className={styles.navButton}>
+          <NavLink to={"/games"} activeClassName={styles.active}>Games</NavLink>
+        </li>
+        <WeatherHead />
+      </ul>
+    </nav>
+
+    // <ul className={styles.topNavBar}>
+    //   <NavBarButton
+    //     optionObject={optionsList[0]}
+    //     link={"/about-us"}
+    //     clickedChoice={clickedChoice}
+    //   ></NavBarButton>
+    //   <NavBarButton
+    //     optionObject={optionsList[1]}
+    //     link={"/games"}
+    //     clickedChoice={clickedChoice}
+    //   />
+    //   <NavBarButton
+    //     optionObject={optionsList[2]}
+    //     clickedChoice={clickedChoice}
+    //   />
+    //   <NavBarButton
+    //     optionObject={optionsList[3]}
+    //     clickedChoice={clickedChoice}
+    //   />
+    //   <WeatherHead />
+    //   <NavBarButton
+    //     left={true}
+    //     optionObject={optionsList[4]}
+    //     clickedChoice={clickedChoice}
+    //   />
+    // </ul>
+  );
 };
 
 export default TopNavBar;

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 
 import styles from "./NavBarButton.module.css";
 
@@ -20,11 +22,14 @@ const ifLeftShift = props.left ? 'translateX(-4vw)' : 'translateX(4vw)';
 
   return (
 
+   
+<div> A div here for now</div>
      
-    <button className={styles.navButton} onClick={clicked} style={styling}>
-      {title}
+    // <button className={styles.navButton} onClick={clicked} style={styling}>
+      // <NavLink to={props.link}>jiminiy</NavLink>
+      // {title}
 
-    </button>
+    // </button>
 
   );
 };
