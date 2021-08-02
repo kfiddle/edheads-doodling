@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 25vh;
-    background: wheat;
+    /* height: 25vh; */
+    background: #fff;
+    margin-top: 25vh;
+
   }

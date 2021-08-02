@@ -8,12 +8,15 @@ import AboutUs from "./components/aboutUsPanel/AboutUsPanel";
 import GamesPanel from "./components/games/GamesPanel";
 import SingleGame from "./components/games/singleGame/SingleGame";
 import SideBar from "./components/sideBar/SideBar";
-import InfoGraphic from "./components/infoGraphic/InfoGraphic";
+import AdPanel from "./components/adPanel/AdPanel";
 import Footer from "./components/footer/Footer";
 
 import "./App.css";
 
 const gamesList = ["firstGame", "secondGame", "thirdGame", "fourthGame"];
+
+// const adsList =[one:]
+
 
 function App() {
   const [choice, setChoice] = useState("Welcome");
@@ -50,11 +53,13 @@ function App() {
     return (
       <div className="App">
         <Header clickedChoice={chosenPanelHandler} />
+        <AdPanel marginTop={"25vh"} longAd={true}/>
+
         {welcomeScreenOpen && <Welcome gamesClicked={chosenPanelHandler} />}
         {/* <SideBar /> */}
-        <InfoGraphic words={"InfoGraphic will live here..."} />
+        <AdPanel marginTop={"0vh"} longAd={false}/>
         <SignUpPanel />
-        <InfoGraphic words={"Quotes and testimony will live here..."} />
+        <AdPanel marginTop={"0vh"} longAd={false} />
         <DonatePanel />
         <Footer />
       </div>
@@ -84,3 +89,15 @@ function App() {
 }
 
 export default App;
+
+
+
+// return (
+
+
+
+
+
+
+
+// )
