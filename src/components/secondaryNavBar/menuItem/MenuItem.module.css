@@ -1,21 +1,22 @@
 .navItemDiv {
-    padding: .5rem 3rem 0.5rem 3rem;
-    height: 50%;
-    cursor: pointer;
-  }
-  
-  .hovered {
-    /* background: white; */
-    border-bottom: groove .5rem wheat ;
-  }
-  
-  .navBarItem {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 1rem 0 0 0;
-  }
-  
-  /* .hoveredText {
-    color: #d2d063;
-  } */
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  height: 50%;
+  cursor: pointer;
+}
+
+.navItemDiv:hover {
+  border-bottom: groove 5px wheat;
+
+}
+
+.highlighted {
+  border-bottom: solid 3px white;
+
+}
+
+.navBarItem {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0 0 0;
+}

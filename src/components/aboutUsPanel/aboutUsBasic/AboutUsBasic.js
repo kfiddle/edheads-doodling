@@ -1,4 +1,5 @@
 import { useState, useEffect, Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 import TextBox from "../../textBox/TextBox";
 
@@ -57,7 +58,8 @@ const AboutUsBasic = (props) => {
               className={styles.gamesLink}
               style={{ color: "rgb(211, 166, 19)" }}
             >
-              our Games
+              <NavLink to={"/games"} className={styles.gamesLink} activeClassName={styles.active}> our Games</NavLink>
+            
             </p>{" "}
             to dive into an activity and let the fun begin!
           </p>

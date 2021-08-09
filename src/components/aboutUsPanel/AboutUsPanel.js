@@ -15,14 +15,16 @@ const choiceTitles = ["About Us", 'Terms Of Use', "FAQ", "Partners", "Awards", "
 
 const AboutUsPanel = (props) => {
   const [renderedPanel, setRenderedPanel] = useState(choicesList[0]);
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
 
   const clickHandler = (chosenComponentIndex) => {
     setRenderedPanel(choicesList[chosenComponentIndex]);
+    setHighlightedIndex(chosenComponentIndex);
   };
 
   return (
     <div className={styles.outermostDiv} style={{ transform: `translateY(0)` }}>
-      <SecondaryNavBar clickedChoice={clickHandler} choices={choiceTitles} />
+      <SecondaryNavBar clickedChoice={clickHandler} choices={choiceTitles} highlightedIndex={highlightedIndex} />
       {renderedPanel}
     </div>
   );

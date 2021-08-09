@@ -22,7 +22,9 @@ const SecondaryNavBar = (props) => {
   };
 
   const listToDisplay = props.choices.map((choice, index) => (
-    <MenuItem title={choice} key={Math.random()} clickedChoice={clickedChoice} index={index} />
+    <MenuItem title={choice} key={Math.random()} clickedChoice={clickedChoice} index={index} 
+    highlighted = {props.highlightedIndex === index}
+    />
   ));
 
   return (

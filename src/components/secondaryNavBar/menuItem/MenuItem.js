@@ -15,12 +15,12 @@ const MenuItem = (props) => {
 
   const sendUpChoice = () => {
     props.clickedChoice(props.index);
-    
   };
 
+  // ${highlighted && styles.hovered}
   return (
     <div
-      className={`${styles.navItemDiv} ${highlighted && styles.hovered}`}
+      className={`${styles.navItemDiv} ${props.highlighted && styles.highlighted}`}
       onMouseEnter={() => {
         hoverHandler("on");
       }}
