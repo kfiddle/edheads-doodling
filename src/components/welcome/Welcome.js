@@ -59,7 +59,7 @@ const Welcome = (props) => {
     }, 2500);
     setTimeout(() => {
       window.location.href = "/games";
-    }, 3500);
+    }, 3200);
 
   };
 
