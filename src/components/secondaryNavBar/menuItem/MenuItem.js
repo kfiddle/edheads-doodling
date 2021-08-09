@@ -14,14 +14,12 @@ const MenuItem = (props) => {
   };
 
   const sendUpChoice = () => {
-    props.clickedChoice(props.title);
-
-    setHighlighted(true);
+    props.clickedChoice(props.index);
+    
   };
 
   return (
     <div
-    //   className={`${styles.navItemDiv} ${highlighted && chosenOne && styles.hovered}`}
       className={`${styles.navItemDiv} ${highlighted && styles.hovered}`}
       onMouseEnter={() => {
         hoverHandler("on");
@@ -32,7 +30,6 @@ const MenuItem = (props) => {
       onClick={sendUpChoice}
     >
       <p
-        // className={`${styles.navBarItem} ${highlighted && chosenOne && styles.hoveredText} `}
         className={`${styles.navBarItem} ${highlighted && styles.hoveredText} `}
       >
         {props.title}{" "}

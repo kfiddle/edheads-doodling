@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import Ad from "../adPanel/Ad";
-import whiteDots from "../../assets/whiteDots.png";
 
 import styles from "./SideBar.module.css";
 

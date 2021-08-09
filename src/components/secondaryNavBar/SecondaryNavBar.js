@@ -1,37 +1,37 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import MenuItem from "./menuItem/MenuItem";
 
 import styles from "./SecondaryNavBar.module.css";
 
 const SecondaryNavBar = (props) => {
-  const [placement, setPlacement] = useState(-10);
+  const [placement, setPlacement] = useState(0);
+
+  const navBarHeight = useRef();
 
   useEffect(() => {
     setTimeout(() => {
-      setPlacement(0);
-    }, 700 );
+      setPlacement(navBarHeight.current.offsetHeight);
+    }, 700);
+
+    console.log(navBarHeight.current.offsetHeight);
   }, []);
 
-  const clickedChoice = (title) => {
-    props.clickedChoice(title)
-  }
+  const clickedChoice = (componentIndex) => {
+    props.clickedChoice(componentIndex);
+  };
 
+  const listToDisplay = props.choices.map((choice, index) => (
+    <MenuItem title={choice} key={Math.random()} clickedChoice={clickedChoice} index={index} />
+  ));
 
   return (
     <div
       className={styles.secondaryNavBar}
-      style={{ transform: `translateY(${placement}vh)` }}
+      ref={navBarHeight}
+      style={{ transform: `translateY(${placement}px)` }}
     >
-      <div className={styles.innerContainer}>
-        <MenuItem title={"Terms of Use"}  locked={false} />
-        <MenuItem title={"FAQ"} clickedChoice={clickedChoice} locked={false} />
-        <MenuItem title={"Partners"} locked={false} />
-        <MenuItem title={"Awards"} locked={false} />
-        <MenuItem title={"Activity Help"} locked={false} />
-      </div>
-
-      
+      <div className={styles.innerContainer}>{listToDisplay}</div>
     </div>
   );
 };

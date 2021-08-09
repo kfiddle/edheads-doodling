@@ -1,0 +1,46 @@
+
+  .aboutUsDiv {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 1.1s cubic-bezier(0.4, 0, 0.4, 1);
+    width: 100vw;
+  }
+  
+  
+  .textBoxContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 65%;
+  }
+  
+  .textBoxHeading {
+    color: #d2d063;
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+  
+  .basicText {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: 0.5rem 0rem;
+  }
+  
+  .gamesLink {
+    display: inline-block;
+    margin: 0;
+    color: #4a86c2;
+    cursor: pointer;
+  }
+  
+  .gamesLink:hover {
+    color: aqua;
+  }
+  
