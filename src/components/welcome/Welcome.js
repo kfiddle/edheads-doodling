@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import TextBox from "../textBox/TextBox";
 import ForwardArrow from "../forwardArrow/ForwardArrow";
@@ -34,28 +35,32 @@ const Welcome = (props) => {
   };
 
   const launchRobot = () => {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 10; i++) {
       let direction;
       i % 2 === 0 ? (direction = false) : (direction = true);
       setTimeout(() => {
         setRotate(direction);
-        i > 10 ? setDegrees(16 - i) : setDegrees(5);
+        i > 7 ? setDegrees(16 - i) : setDegrees(5);
       }, (400 - 10 * i) * i);
     }
-    setTimeout(shootUp, 2500);
+    setTimeout(shootUp, 1500);
   };
 
   const rocketSequence = () => {
-    props.gamesClicked("Explore Games");
+    
     setRocketClicked(true);
     launchRobot(0);
 
     setTimeout(() => {
       setCloudDetails({ opacity: 1, bottom: 20, left: 0, size: 250 });
-    }, 3000);
+    }, 2000);
     setTimeout(() => {
       setWelcomeScreenOpacity(0);
-    }, 3300);
+    }, 2500);
+    setTimeout(() => {
+      window.location.href = "/games";
+    }, 3500);
+
   };
 
   return (
@@ -68,7 +73,9 @@ const Welcome = (props) => {
           <TextBox
             direction={"right"}
             extraClass={"welcomeText"}
-            opacity={textBoxOpacity}><p className={styles.aboutUs}>ABOUT US</p>
+            opacity={textBoxOpacity}
+          >
+            <p className={styles.aboutUs}>ABOUT US</p>
             <h3 className={styles.welcomeTitle}>
               Welcome! Edheads inspire STEM careers through games!
             </h3>
@@ -96,7 +103,6 @@ const Welcome = (props) => {
                 <ForwardArrow />
               </div>
             </div>
-        
           </TextBox>
         </div>
 
