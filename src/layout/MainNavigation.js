@@ -8,8 +8,8 @@ const MainNavigation = () => {
       <div className={classes.logo}>Great Quotes</div>
       <nav className={classes.nav}>
         <ul>
-          <li><NavLink to={'/all-quotes'}activeClassName={classes.active}>All Quotes</NavLink></li>
-          <li><NavLink to={'/all-quotes'}activeClassName={classes.active}>All Quotes</NavLink></li>
+          {/* <li><NavLink to={'/all-quotes'}activeClassName={classes.active}>All Quotes</NavLink></li>
+          <li><NavLink to={'/all-quotes'}activeClassName={classes.active}>All Quotes</NavLink></li> */}
           <li></li>
           <li></li>
         </ul>

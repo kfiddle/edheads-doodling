@@ -43,20 +43,20 @@ const TopNavBar = (props) => {
 
   return (
     <nav>
-      <ul className={styles.topNavBar}>
-        <li className={styles.navButton}>
+      <div className={styles.topNavBar}>
+        <div className={styles.navButton}>
           <NavLink to={"/welcome"} activeClassName={styles.active}>
             Welcome
           </NavLink>
-        </li>
-        <li className={styles.navButton}>
+        </div>
+        <div className={styles.navButton}>
           <NavLink to={"/about-us"} activeClassName={styles.active}>About Us</NavLink>
-        </li>
-        <li className={styles.navButton}>
+        </div>
+        <div className={styles.navButton}>
           <NavLink to={"/games"} activeClassName={styles.active}>Games</NavLink>
-        </li>
+        </div>
         <WeatherHead />
-      </ul>
+      </div>
     </nav>
 
     // <ul className={styles.topNavBar}>

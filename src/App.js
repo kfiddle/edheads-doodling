@@ -26,35 +26,35 @@ const gamesList = ["firstGame", "secondGame", "thirdGame", "fourthGame"];
 // const adsList =[one:]
 
 function App() {
-  const [choice, setChoice] = useState("Welcome");
-  const [chosenGame, setChosenGame] = useState("");
+  // const [choice, setChoice] = useState("Welcome");
+  // const [chosenGame, setChosenGame] = useState("");
 
-  const welcome = choice === "Welcome";
-  const aboutUs = choice === "About Us";
-  const ourGames = choice === "Our Games";
-  const exploreGames = choice === "Explore Games";
-  const gamesPanel = choice === "Games Panel";
-  const singleGame = choice === "Single Game";
+  // const welcome = choice === "Welcome";
+  // const aboutUs = choice === "About Us";
+  // const ourGames = choice === "Our Games";
+  // const exploreGames = choice === "Explore Games";
+  // const gamesPanel = choice === "Games Panel";
+  // const singleGame = choice === "Single Game";
 
-  const sideBarOpen = aboutUs || ourGames;
-  const welcomeScreenOpen = welcome || aboutUs;
+  // const sideBarOpen = aboutUs || ourGames;
+  // const welcomeScreenOpen = welcome || aboutUs;
 
-  const chosenPanelHandler = (choice) => {
-    if (choice === "Explore Games") {
-      setTimeout(() => {
-        setChoice("Our Games");
-      }, 5000);
-    } else {
-      setChoice(choice);
-    }
+  // const chosenPanelHandler = (choice) => {
+  //   if (choice === "Explore Games") {
+  //     setTimeout(() => {
+  //       setChoice("Our Games");
+  //     }, 5000);
+  //   } else {
+  //     setChoice(choice);
+  //   }
 
-    console.log(choice);
-    console.log(singleGame);
-  };
+  //   console.log(choice);
+  //   console.log(singleGame);
+  // };
 
-  const gameChosen = (gameTitle) => {
-    setChosenGame(gameTitle);
-  };
+  // const gameChosen = (gameTitle) => {
+  //   setChosenGame(gameTitle);
+  // };
 
   return (
     <Layout>
