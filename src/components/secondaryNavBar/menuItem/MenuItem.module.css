@@ -4,14 +4,13 @@
   cursor: pointer;
 }
 
-.navItemDiv:hover {
+/* .navItemDiv:hover {
   border-bottom: groove 5px wheat;
 
-}
+} */
 
 .highlighted {
   border-bottom: solid 3px white;
-
 }
 
 .navBarItem {
@@ -19,4 +18,8 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin: 1rem 0 0 0;
+}
+
+.navBarItem:hover {
+  color: rgb(48, 116, 17);
 }
