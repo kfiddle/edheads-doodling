@@ -31,7 +31,7 @@ const SecondaryNavBar = (props) => {
     <div
       className={styles.secondaryNavBar}
       ref={navBarHeight}
-      style={{ transform: `translateY(${placement}px)` }}
+      // style={{ transform: `translateY(${placement}px)` }}
     >
       <div className={styles.innerContainer}>{listToDisplay}</div>
     </div>

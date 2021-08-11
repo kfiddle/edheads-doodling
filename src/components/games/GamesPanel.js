@@ -57,8 +57,10 @@ const GamesPanel = (props) => {
     <GameScene gameObject={scene} gameChosen={gameClicked} key={Math.random()} />
   ));
 
+  // style={{ opacity: emerging }}
+
   return (
-    <div className={styles.outermostContainer} style={{ opacity: emerging }}>
+    <div className={styles.outermostContainer} >
       <div className={styles.innerContainer}>{allScenes}</div>
     </div>
   );

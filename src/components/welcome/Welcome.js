@@ -88,11 +88,14 @@ const Welcome = (props) => {
               examples.
             </p>
             <div className={styles.buttonRow}>
+
+
               <button
                 className={styles.buttonToTheGames}
-                onClick={rocketSequence}
+                // onClick={rocketSequence}
               >
-                Explore Our Games!
+                <NavLink to={'/games'} className={styles.buttonToTheGames} >Explore Our Games!</NavLink>
+                
               </button>
 
               <div className={styles.discoverUs}>

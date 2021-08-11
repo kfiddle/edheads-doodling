@@ -30,7 +30,7 @@ const MenuItem = (props) => {
       onClick={sendUpChoice}
     >
       <p
-        className={`${styles.navBarItem} ${highlighted && styles.hoveredText} `}
+        className={`${styles.navBarItem} `}
       >
         {props.title}{" "}
       </p>

@@ -1,6 +1,6 @@
 .secondaryNavBar {
-  position: absolute;
-  top: 18;
+  /* position: absolute; */
+  /* top: 18vh; */
   background: #d2d063;
   width: 100%;
   transition: 1.2s cubic-bezier(0.4, 0, 0.4, 1);

@@ -24,7 +24,6 @@
   /* margin: 25vh auto; */
 }
 
-
 .aboutUs {
   color: darkorange;
   margin: 0;
@@ -57,10 +56,9 @@
   border-radius: 10px;
   border: none;
   color: white;
-  /* width: 35%; */
-  /* height: 3.5rem; */
+  text-decoration: none;
   cursor: pointer;
-  /* opacity: 0.9; */
+
   font-size: 110%;
   font-weight: 900;
   letter-spacing: 0;

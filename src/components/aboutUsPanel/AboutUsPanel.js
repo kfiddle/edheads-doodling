@@ -36,11 +36,11 @@ const AboutUsPanel = (props) => {
 
   return (
     <div className={styles.outermostDiv} style={{ transform: `translateY(0)` }}>
-      <SecondaryNavBar
+      {/* <SecondaryNavBar
         clickedChoice={clickHandler}
         choices={choiceTitles}
         highlightedIndex={highlightedIndex}
-      />
+      /> */}
 
       {choicesList[highlightedIndex]}
     </div>

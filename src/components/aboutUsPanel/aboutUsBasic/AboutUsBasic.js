@@ -28,7 +28,7 @@ const AboutUsBasic = (props) => {
     <div
       className={styles.aboutUsDiv}
       style={{
-        transform: `translateX(${slidePosition}vw)`,
+        // transform: `translateX(${slidePosition}vw)`,
         background: color,
       }}
     >
